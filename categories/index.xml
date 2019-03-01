@@ -10,15 +10,6 @@
     
     
     <item>
-      <title>Development</title>
-      <link>http://weizui.org/categories/development/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
-      
-      <guid>http://weizui.org/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Docker</title>
       <link>http://weizui.org/categories/docker/</link>
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
@@ -42,15 +33,6 @@
       <pubDate>Tue, 13 Feb 2018 12:00:08 +0800</pubDate>
       
       <guid>http://weizui.org/categories/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Operation</title>
-      <link>http://weizui.org/categories/operation/</link>
-      <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
-      
-      <guid>http://weizui.org/categories/operation/</guid>
       <description></description>
     </item>
     
