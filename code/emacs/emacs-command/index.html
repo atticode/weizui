@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Emacs 常用命令
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    <span class="mobilenav--btn"></span>
+  </div>
+</header>
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/development">development</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/operation">operation</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Emacs 常用命令</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2018-02-09 16:20 Friday </span>
+          <span class="meta--wordcount">字数: 144</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/emacs">emacs</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/command">command</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/editor">editor</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/code">code</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h1 id="emacs-常用命令">Emacs 常用命令</h1>
+
+<h2 id="移动">移动</h2>
+
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C-f</td>
+<td></td>
+<td>向前移动一个字符</td>
+</tr>
+
+<tr>
+<td>C-b</td>
+<td></td>
+<td>向后移动一个字符</td>
+</tr>
+
+<tr>
+<td>C-p</td>
+<td></td>
+<td>向上移动一个字符</td>
+</tr>
+
+<tr>
+<td>C-n</td>
+<td></td>
+<td>向下移动一个字符</td>
+</tr>
+
+<tr>
+<td>C-M-S-v</td>
+<td>M-x scroll-other-window-down</td>
+<td>向下滚动其他窗口</td>
+</tr>
+
+<tr>
+<td>C-M-v</td>
+<td>M-x scroll-other-window-up</td>
+<td>向上滚动其他窗口</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="文件">文件</h2>
+
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>命令</th>
+<th>description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C-x C-s</td>
+<td></td>
+<td>保存文件</td>
+</tr>
+
+<tr>
+<td>C-x C-f</td>
+<td></td>
+<td>打开文件</td>
+</tr>
+
+<tr>
+<td></td>
+<td>M-x hexl-find-file</td>
+<td>打开二进制文件</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="编辑">编辑</h2>
+
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td></td>
+<td>M-x json-pretty-print-buffer</td>
+<td>格式化JSON文件</td>
+</tr>
+
+<tr>
+<td>C-M-h</td>
+<td>M-x mark-defun</td>
+<td>选中函数</td>
+</tr>
+
+<tr>
+<td>C-x h</td>
+<td>M-x mark-whole-buffer</td>
+<td>全选</td>
+</tr>
+
+<tr>
+<td>C-M-</td>
+<td>M-x indent-region</td>
+<td>格式化选中区域</td>
+</tr>
+</tbody>
+</table>
+
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/docker/docker-concept/"> docker概念</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/posts/demo/"> Hello Org</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#emacs-常用命令">Emacs 常用命令</a>
+<ul>
+<li><a href="#移动">移动</a></li>
+<li><a href="#文件">文件</a></li>
+<li><a href="#编辑">编辑</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

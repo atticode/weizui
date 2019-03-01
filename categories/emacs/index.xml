@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on 微醉</title>
+    <link>http://weizui.org/categories/emacs/</link>
+    <description>Recent content in Emacs on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Feb 2019 17:05:22 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs 操作</title>
+      <link>http://weizui.org/code/emacs/emacs-operation/</link>
+      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-operation/</guid>
+      <description>格式化JSON文件 M-x json-pretty-print-buffer 格式化源码 格式化整个文件 M-x mark-whole-buffer (C-x h) 全选 M-x indent-region (C-M-) 格式化选中 格式化整个函数 M-x mark-defun (C-M-h) 选中函数 M-x indent-region (C-M-) 格式化 更新插件 进入列表 package-list-packages 设置更新标识 package-menu-mark-upgrade [U] 执行更新操作</description>
+    </item>
+    
+    <item>
+      <title>Emacs 常用命令</title>
+      <link>http://weizui.org/code/emacs/emacs-command/</link>
+      <pubDate>Fri, 09 Feb 2018 16:20:48 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-command/</guid>
+      <description>Emacs 常用命令 移动 快捷键 命令 说明 C-f 向前移动一个字符 C-b 向后移动一个字符 C-p 向上移动一个字符 C-n 向下移动一个字符 C-M-S-v M-x scroll-other-window-down 向下滚动其他窗口 C-M-v M-x scroll-other-window-up 向上滚动其他窗口 文件 快捷键 命令 description</description>
+    </item>
+    
+  </channel>
+</rss>

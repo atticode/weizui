@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - docker镜像相关命令
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    <span class="mobilenav--btn"></span>
+  </div>
+</header>
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/development">development</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/operation">operation</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">docker镜像相关命令</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2018-02-08 17:27 Thursday </span>
+          <span class="meta--wordcount">字数: 770</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/docker">docker</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/command">command</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/operation">operation</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h1 id="docker镜像相关命令">docker镜像相关命令</h1>
+
+<h2 id="镜像仓库相关命令">镜像仓库相关命令</h2>
+
+<h3 id="docker-login">docker login</h3>
+
+<p>登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub</p>
+
+<blockquote>
+<p>Usage: docker login [OPTIONS] [SERVER]
+e.g: docker login -u username -p password</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-p, --password string: 密码</li>
+<li>-u, --username string: 用户名</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>SERVER: 镜像仓库的地址</li>
+</ol>
+
+<h3 id="docker-logout">docker logout</h3>
+
+<p>登出一个docker镜像仓库，如果未指定镜像仓库的地址，则默认官方仓库——docker hub</p>
+
+<blockquote>
+<p>Usage: docker logout [OPTIONS] [SERVER]
+e.g: docker logout</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>SERVER: 镜像仓库的地址</li>
+</ol>
+
+<h3 id="docker-search">docker search</h3>
+
+<p>从镜像仓库查找镜像</p>
+
+<blockquote>
+<p>Usage: docker search [OPTIONS] TERM
+e.g: docker search httpd</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-f, --filter value: 根据限制条件搜索 (default [])
+
+<ul>
+<li>e.g: docker search --filter=stars=10</li>
+</ul></li>
+<li>--limit int: 显示搜索结果的数量 (default 25)</li>
+<li>--no-index: 显示完整的镜像描述</li>
+<li>--no-trunc: 显示完整的镜像描述</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>TERM: 镜像名称</li>
+</ol>
+
+<h3 id="docker-pull">docker pull</h3>
+
+<p>从镜像仓库中拉取或更新指定镜像</p>
+
+<blockquote>
+<p>Usage: docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+e.g: docker pull tomcat</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-a, --all-tags: 拉取所有 tagged 镜像</li>
+<li>--disable-content-trust: 忽略镜像的校验，默认开启</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>NAME: 镜像名称</li>
+<li>TAG: 镜像的tag</li>
+<li>DIGEST: 镜像的ID</li>
+</ol>
+
+<h3 id="docker-push">docker push</h3>
+
+<p>将本地的镜像上传到镜像仓库，要先登录到镜像仓库</p>
+
+<blockquote>
+<p>Usage: docker push [OPTIONS] NAME[:TAG]
+e.g: docker push myhttpd:1.0</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>--disable-content-trust: 忽略镜像校验(默认开启)</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>NAME: 镜像名称</li>
+<li>TAG: 镜像的tag</li>
+</ol>
+
+<h2 id="本地镜像管理相关命令">本地镜像管理相关命令</h2>
+
+<h3 id="docker-images">docker images</h3>
+
+<p>列出本地镜像</p>
+
+<blockquote>
+<p>Usage: docker images [OPTIONS] [REPOSITORY[:TAG]]
+e.g: docker images</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-a, --all: 列出本地所有镜像，(包括中间映射层，默认情况下过滤掉中间映射层)</li>
+<li>--digests: 显示sha256信息</li>
+<li>-f, --filter value: 根据限制条件过滤输出(default [])</li>
+<li>--format string: 指定返回值的模板文件</li>
+<li>--no-reunc: 显示完整的镜像信息</li>
+<li>-q, --quiet: 只显示镜像ID</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>REPOSITORY: 镜像名称</li>
+<li>TAG: 镜像的tag</li>
+</ol>
+
+<h3 id="docker-tag">docker tag</h3>
+
+<p>标记本地镜像到一个仓库</p>
+
+<blockquote>
+<p>Usage: docker tag [OPTIONS] IMAGE[:TAG] IMAGE[:TAG]
+e.g: docker tag httpd:latest myhttpd:mytag</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>IMAGE: 镜像名称</li>
+<li>IMAGE: 自定义镜像名称</li>
+</ol>
+
+<h3 id="docker-history">docker history</h3>
+
+<p>查看镜像的历史记录</p>
+
+<blockquote>
+<p>Usage: docker history [OPTIONS] IMAGE
+e.g: docker history httpd</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-H, --human:以可读的格式打印镜像的大小和日期, 默认为 true</li>
+<li>--no-trunc: 显示完整的镜像信息</li>
+<li>-q, --quiet: 仅列出提交记录ID</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>IMAGE: 镜像名称</li>
+</ol>
+
+<h3 id="docker-rmi">docker rmi</h3>
+
+<p>删除一个或多个镜像</p>
+
+<blockquote>
+<p>Usage: docker rmi [OPTIONS] IMAGE [IMAGE&hellip;]
+e.g: docker rmi httpd</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-f, --force: 强制删除镜像</li>
+<li>--no-prune: 不移除该镜像的过程镜像，默认移除</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>IMAGE: 镜像名称</li>
+</ol>
+
+<h3 id="docker-save">docker save</h3>
+
+<p>将一个或多个镜像保存成 tar 文件</p>
+
+<blockquote>
+<p>Usage: docker save [OPTIONS] IMAGE [IMAGE&hellip;]
+e.g: docker save -o httpd.tar httpd</p>
+</blockquote>
+
+<ol>
+<li>OPTIONS:
+
+<ul>
+<li>-o, --output string: 保存到的文件</li>
+<li>--help: 打印用法</li>
+</ul></li>
+<li>IMAGE: 镜像名称</li>
+</ol>
+
+<h3 id="docker-load">docker load</h3>
+
+<h3 id="docker-export">docker export</h3>
+
+<h3 id="docker-import">docker import</h3>
+
+<h3 id="docker-build">docker build</h3>
+
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/docker/docker-concept/"> docker概念</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#docker镜像相关命令">docker镜像相关命令</a>
+<ul>
+<li><a href="#镜像仓库相关命令">镜像仓库相关命令</a>
+<ul>
+<li><a href="#docker-login">docker login</a></li>
+<li><a href="#docker-logout">docker logout</a></li>
+<li><a href="#docker-search">docker search</a></li>
+<li><a href="#docker-pull">docker pull</a></li>
+<li><a href="#docker-push">docker push</a></li>
+</ul></li>
+<li><a href="#本地镜像管理相关命令">本地镜像管理相关命令</a>
+<ul>
+<li><a href="#docker-images">docker images</a></li>
+<li><a href="#docker-tag">docker tag</a></li>
+<li><a href="#docker-history">docker history</a></li>
+<li><a href="#docker-rmi">docker rmi</a></li>
+<li><a href="#docker-save">docker save</a></li>
+<li><a href="#docker-load">docker load</a></li>
+<li><a href="#docker-export">docker export</a></li>
+<li><a href="#docker-import">docker import</a></li>
+<li><a href="#docker-build">docker build</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

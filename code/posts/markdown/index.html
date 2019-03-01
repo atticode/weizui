@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Markdown
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    <span class="mobilenav--btn"></span>
+  </div>
+</header>
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/development">development</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/operation">operation</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Markdown</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2018-02-13 12:00 Tuesday </span>
+          <span class="meta--wordcount">字数: 367</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/markdown">markdown</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h1 id="markdown-syntax">Markdown Syntax</h1>
+
+<h2 id="标题">标题</h2>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">  <span class="gh">#</span> 一级标题
+  <span class="gu">##</span> 二级标题
+  <span class="gu">###</span> 三级标题
+  <span class="gu">####</span> 四级标题
+  <span class="gu">#####</span> 五级标题
+  ###### 六级标题</code></pre></div>
+<h3 id="三级标题">三级标题</h3>
+
+<h4 id="四级标题">四级标题</h4>
+
+<h5 id="五级标题">五级标题</h5>
+
+<h6 id="六级标题">六级标题</h6>
+
+<h2 id="段落">段落</h2>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">  另起一行即为段落</code></pre></div>
+<p>段落示例</p>
+
+<h2 id="列表">列表</h2>
+
+<h3 id="无序列表">无序列表</h3>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span> 无序列表一<span class="err">
+</span><span class="err"></span><span class="k">*</span> 无序列表二<span class="err">
+</span><span class="err"></span><span class="k">*</span> 无序列表三<span class="err">
+</span><span class="err"></span>
+    <span class="k">*</span> 无序列表三丶一<span class="err">
+</span><span class="err"></span>    * 无序列表三丶二</code></pre></div>
+<ul>
+<li>无序列表一</li>
+<li>无序列表二</li>
+
+<li><p>无序列表三</p>
+
+<ul>
+<li>无序列表三丶一</li>
+<li>无序列表三丶二</li>
+</ul></li>
+</ul>
+
+<h3 id="有序列表">有序列表</h3>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">1.</span> 有序列表一<span class="err">
+</span><span class="err"></span><span class="k">2.</span> 有序列表二<span class="err">
+</span><span class="err"></span><span class="k">3.</span> 有序列表三<span class="err">
+</span><span class="err"></span>
+    <span class="k">1.</span> 有序列表三丶一<span class="err">
+</span><span class="err"></span>    2. 有序列表三丶二</code></pre></div>
+<ol>
+<li>有序列表一</li>
+<li>有序列表二</li>
+
+<li><p>有序列表三</p>
+
+<ol>
+<li>有序列表三丶一</li>
+<li>有序列表三丶二</li>
+</ol></li>
+</ol>
+
+<h2 id="代码块">代码块</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="s">```language</span>
+<span class="s">    code body
+</span><span class="s">```</span></code></pre></div>
+
+<p>Golang</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&#34;Hello Golang!&#34;</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+<p>Rust代码
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-rust" data-lang="rust"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;hhhh&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w"></span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div></p>
+<div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w"></span><span class="p">}</span></code></pre></div>
+<h2 id="表格">表格</h2>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">| 表格头  | 表格头2 |<span class="err">
+</span><span class="err"></span>|--------:|---------|<span class="err">
+</span><span class="err"></span>| 内容    | 内容    |<span class="err">
+</span><span class="err"></span>| 内容二  | 内容二  |</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="right">表格头</th>
+<th>表格头2</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">内容</td>
+<td>内容</td>
+</tr>
+
+<tr>
+<td align="right">内容二</td>
+<td>内容二</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>表头壹</th>
+<th align="right">表头贰</th>
+<th align="center">表头叁</th>
+<th>表头肆</th>
+<th>表头伍</th>
+<th>表头陆</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C-x C-s</td>
+<td align="right">保存</td>
+<td align="center">内容</td>
+<td>内容</td>
+<td>内容</td>
+<td>内容</td>
+</tr>
+
+<tr>
+<td>C-x C-b</td>
+<td align="right">列出buffer</td>
+<td align="center">内容</td>
+<td>内容</td>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="引用">引用</h2>
+
+<blockquote>
+<p>块引用
+块引用</p>
+
+<blockquote>
+<p>二级引用</p>
+</blockquote>
+</blockquote>
+
+<h2 id="文本样式">文本样式</h2>
+
+<p>段落段落<code>code inline</code> 段落</p>
+
+<p><em>斜体</em></p>
+
+<p><strong>粗体</strong></p>
+
+<p>有一个段落鱼哦有关规定卡夫卡手机发</p>
+
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/posts/hello/"> Hello Hugo</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/emacs/emacs-operation/"> Emacs 操作</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#markdown-syntax">Markdown Syntax</a>
+<ul>
+<li><a href="#标题">标题</a>
+<ul>
+<li><a href="#三级标题">三级标题</a>
+<ul>
+<li><a href="#四级标题">四级标题</a>
+<ul>
+<li><a href="#五级标题">五级标题</a>
+<ul>
+<li><a href="#六级标题">六级标题</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#段落">段落</a></li>
+<li><a href="#列表">列表</a>
+<ul>
+<li><a href="#无序列表">无序列表</a></li>
+<li><a href="#有序列表">有序列表</a></li>
+</ul></li>
+<li><a href="#代码块">代码块</a></li>
+<li><a href="#表格">表格</a></li>
+<li><a href="#引用">引用</a></li>
+<li><a href="#文本样式">文本样式</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

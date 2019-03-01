@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on 微醉</title>
+    <link>http://weizui.org/categories/docker/</link>
+    <description>Recent content in Docker on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 08 Feb 2018 17:27:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker概念</title>
+      <link>http://weizui.org/code/docker/docker-concept/</link>
+      <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/docker/docker-concept/</guid>
+      <description>docker概念 docker服务端 docker客户端 docker镜像 docker容器</description>
+    </item>
+    
+    <item>
+      <title>docker镜像相关命令</title>
+      <link>http://weizui.org/code/docker/docker-command/</link>
+      <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/docker/docker-command/</guid>
+      <description>docker镜像相关命令 镜像仓库相关命令 docker login 登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub Usage: docker login [OPTIONS] [SERVER] e.g: docker login -u username -p password OPTIONS:</description>
+    </item>
+    
+  </channel>
+</rss>

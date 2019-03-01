@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/emacs-operation/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/posts/markdown/</loc>
+    <lastmod>2018-02-13T12:00:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/posts/hello/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/posts/demo/</loc>
+    <lastmod>2018-02-09T17:27:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/note/</loc>
+    <lastmod>2018-02-11T09:57:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/read/</loc>
+    <lastmod>2018-02-11T09:57:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/</loc>
+    <lastmod>2018-02-11T09:57:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/emacs-command/</loc>
+    <lastmod>2018-02-09T16:20:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/</loc>
+    <lastmod>2018-02-09T16:19:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/docker/docker-concept/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/docker/docker-command/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/code/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/command/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/development/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/docker/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/docker/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/editor/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/emacs/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/emacs/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/markdown/</loc>
+    <lastmod>2018-02-13T12:00:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/markdown/</loc>
+    <lastmod>2018-02-13T12:00:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/operation/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/operation/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/</loc>
+    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/alltaxonomies/</loc>
+  </url>
+  
+</urlset>
