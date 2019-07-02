@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on 微醉</title>
+    <link>http://weizui.org/categories/php/</link>
+    <description>Recent content in Php on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Jun 2019 09:15:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP Environment</title>
+      <link>http://weizui.org/code/php/environment/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:41 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/php/environment/</guid>
+      <description>Windows 下载 安装 配置 配置 Apache Httpd 打开 apache/conf/httpd.conf 文件 Apache 添加 PHP 模块 # 1. 添加PHP模块 LoadModule php5_module &amp;#34;C:/php-5.6.31/php5apache2_4.dll&amp;#34; # 2. php.ini 文件所在目录 PHPIniDir &amp;#34;C:/php-5.6.31&amp;#34; # 3. 需要php解析的文件类型 AddType application/x-httpd-php .php 配置 PHP</description>
+    </item>
+    
+  </channel>
+</rss>

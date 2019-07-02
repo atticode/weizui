@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on 微醉</title>
+    <link>http://weizui.org/categories/android/</link>
+    <description>Recent content in Android on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Jun 2019 09:16:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Environment</title>
+      <link>http://weizui.org/code/android/environment/</link>
+      <pubDate>Thu, 13 Jun 2019 09:16:28 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/android/environment/</guid>
+      <description>Android SDK 环境变量 // 1. 新建 ANDROID_HOME ANDROID_HOME C:\android\sdk // 2. 添加path变量 Path %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;</description>
+    </item>
+    
+  </channel>
+</rss>

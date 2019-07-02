@@ -5,9 +5,28 @@
     <link>http://weizui.org/categories/</link>
     <description>Recent content in Categories on 微醉</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Jun 2019 09:16:28 +0800</lastBuildDate>
     
 	<atom:link href="http://weizui.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>http://weizui.org/categories/android/</link>
+      <pubDate>Thu, 13 Jun 2019 09:16:28 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angularjs</title>
+      <link>http://weizui.org/categories/angularjs/</link>
+      <pubDate>Tue, 02 Jul 2019 13:52:53 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/angularjs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Docker</title>
@@ -19,20 +38,101 @@
     </item>
     
     <item>
+      <title>Editor</title>
+      <link>http://weizui.org/categories/editor/</link>
+      <pubDate>Thu, 13 Jun 2019 19:00:16 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Emacs</title>
       <link>http://weizui.org/categories/emacs/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      <pubDate>Wed, 12 Jun 2019 10:29:14 +0800</pubDate>
       
       <guid>http://weizui.org/categories/emacs/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Git</title>
+      <link>http://weizui.org/categories/git/</link>
+      <pubDate>Wed, 12 Jun 2019 14:26:00 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://weizui.org/categories/java/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:33 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>http://weizui.org/categories/latex/</link>
+      <pubDate>Wed, 12 Jun 2019 14:36:07 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Markdown</title>
       <link>http://weizui.org/categories/markdown/</link>
-      <pubDate>Tue, 13 Feb 2018 12:00:08 +0800</pubDate>
+      <pubDate>Thu, 13 Jun 2019 09:20:31 +0800</pubDate>
       
       <guid>http://weizui.org/categories/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orgmode</title>
+      <link>http://weizui.org/categories/orgmode/</link>
+      <pubDate>Thu, 13 Jun 2019 09:21:56 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>http://weizui.org/categories/other/</link>
+      <pubDate>Thu, 13 Jun 2019 09:12:47 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>http://weizui.org/categories/php/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:41 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgresql</title>
+      <link>http://weizui.org/categories/postgresql/</link>
+      <pubDate>Tue, 16 Apr 2019 09:17:08 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://weizui.org/categories/vim/</link>
+      <pubDate>Wed, 12 Jun 2019 14:37:03 +0800</pubDate>
+      
+      <guid>http://weizui.org/categories/vim/</guid>
       <description></description>
     </item>
     

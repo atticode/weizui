@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Vim Setting
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    
+    <div class="header--mobilenav-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class="icon-menu"/></svg>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/angularjs">angularjs</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/git">git</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/java">java</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/latex">latex</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/postgresql">postgresql</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/vim">vim</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/website">website</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/android">android</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/angularjs">angularjs</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/editor">editor</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (5)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/git">git</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/java">java</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/latex">latex</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/orgmode">orgmode</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/other">other</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/php">php</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/postgresql">postgresql</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/vim">vim</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Vim Setting</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2019-06-12 14:37 Wednesday </span>
+          <span class="meta--wordcount">字数: 327</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/vim">vim</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h2 id="vim-设置状态栏">Vim 设置状态栏</h2>
+<div class="highlight"><pre class="chroma"><code class="language-vim-script" data-lang="vim-script">&#34;statusline 设置状态栏
+                    
+set statusline=  
+set statusline+=%7*\[%n]                                  &#34;buffernr
+set statusline+=%1*\ %&lt;%F\                                &#34;文件路径
+set statusline+=%2*\ %y\                                  &#34;文件类型
+set statusline+=%3*\ %{&#39;&#39;.(&amp;fenc!=&#39;&#39;?&amp;fenc:&amp;enc).&#39;&#39;}      &#34;编码1
+set statusline+=%3*\ %{(&amp;bomb?\&#34;,BOM\&#34;:\&#34;\&#34;)}\            &#34;编码2
+set statusline+=%4*\ %{&amp;ff}\                              &#34;文件系统(dos/unix..)
+set statusline+=%5*\ %{&amp;spelllang}\%{HighlightSearch()}\  &#34;语言 &amp; 是否高亮，H表示高亮?
+set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             &#34;光标所在行号/总行数 (百分比)
+set statusline+=%9*\ col:%03c\                            &#34;光标所在列
+set statusline+=%0*\ \ %m%r%w\ %P\ \                      &#34;Modified? Read only? Top/bottom
+function! HighlightSearch()
+      if &amp;hls
+          return &#39;H&#39;
+      else
+          return &#39;&#39;
+      endif
+endfunction
+hi User1 ctermfg=white  ctermbg=darkred
+hi User2 ctermfg=blue  ctermbg=58
+hi User3 ctermfg=white  ctermbg=100
+hi User4 ctermfg=darkred  ctermbg=95
+hi User5 ctermfg=darkred  ctermbg=77
+hi User7 ctermfg=darkred  ctermbg=blue  cterm=bold
+hi User8 ctermfg=231  ctermbg=blue
+&#34;hi User9 ctermfg=#ffffff  ctermbg=#810085
+hi User0 ctermfg=yellow  ctermbg=138</code></pre></div>
+<h2 id="vim-的-emmet-插件">Vim 的 emmet 插件</h2>
+
+<p>**** 安装
+1. 将压缩包中的plugin/emmet.vim 文件拷贝到 vim 安装目录下的 plugin/ 文件夹
+2. 将压缩包中的autoload/ 下的 emmet.vim文件和emmet/文件夹拷贝到 vim安装目录下的 autoload/ 文件夹</p>
+
+<p>**** emmet常用命令
+| 命令  | 说明     |
+|&mdash;&mdash;-+&mdash;&mdash;&mdash;-|
+| C-y , | 展开标签 |</p>
+
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/latex/latex-chinese/"> Latex Chinese</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/vim/command/"> Command</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#vim-设置状态栏">Vim 设置状态栏</a></li>
+<li><a href="#vim-的-emmet-插件">Vim 的 emmet 插件</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

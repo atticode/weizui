@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Emacs Setting
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    
+    <div class="header--mobilenav-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class="icon-menu"/></svg>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/angularjs">angularjs</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/git">git</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/java">java</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/latex">latex</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/postgresql">postgresql</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/vim">vim</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/website">website</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/android">android</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/angularjs">angularjs</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/editor">editor</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (5)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/git">git</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/java">java</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/latex">latex</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/orgmode">orgmode</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/other">other</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/php">php</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/postgresql">postgresql</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/vim">vim</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Emacs Setting</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2019-06-12 10:22 Wednesday </span>
+          <span class="meta--wordcount">字数: 733</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/emacs">emacs</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/command">command</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/editor">editor</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/code">code</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h2 id="显示行号">显示行号</h2>
+
+<h3 id="通过命令设置">通过命令设置</h3>
+
+<ol>
+<li><p>设置当前 Buffer 显示行号</p>
+
+<pre><code>M-x linum-mode
+</code></pre></li>
+
+<li><p>设置所有 Buffer 显示行号</p>
+
+<pre><code>M-x global-linum-mode
+</code></pre></li>
+</ol>
+
+<h3 id="配置文件里设置">配置文件里设置</h3>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; 显示行号</span>
+<span class="p">(</span><span class="nv">global-linum-mode</span> <span class="no">t</span><span class="p">)</span>
+<span class="c1">;; 或者</span>
+<span class="p">(</span><span class="nv">global-linum-mode</span> <span class="mi">1</span><span class="p">)</span></code></pre></div>
+<h2 id="设置-tab">设置 tab</h2>
+
+<h3 id="在-emacs-配置文件中设置">在 .emacs 配置文件中设置</h3>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; tab改为空格</span>
+<span class="p">(</span><span class="nb">setq-default</span> <span class="nv">indent-tabs-mode</span> <span class="no">nil</span><span class="p">)</span>
+<span class="c1">;; tab不改为空格</span>
+<span class="p">(</span><span class="nb">setq-default</span> <span class="nv">indent-tabs-mode</span> <span class="no">t</span><span class="p">)</span>
+<span class="c1">;; 设置tab宽度</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">default-tab-width</span> <span class="mi">4</span><span class="p">)</span>
+<span class="c1">;; c c++ 缩进4个空格</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">c-basic-offset</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">c-default-style</span> <span class="s">&#34;linux&#34;</span><span class="p">)</span></code></pre></div>
+<h3 id="将所有超过两个的连续空格使用tab替换掉">将所有超过两个的连续空格使用TAB替换掉</h3>
+
+<pre><code>M-x tabify
+</code></pre>
+
+<h3 id="将所有tab使用适当个数的空格替换掉">将所有TAB使用适当个数的空格替换掉</h3>
+
+<pre><code>M-x untabify
+</code></pre>
+
+<h2 id="设置启动时的窗口大小">设置启动时的窗口大小</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; 设置窗口位置为屏幕左上角(0, 0)</span>
+<span class="p">(</span><span class="nf">set-frame-position</span> <span class="p">(</span><span class="nf">selected-frame</span><span class="p">)</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">;; 设置宽度</span>
+<span class="p">(</span><span class="nf">set-frame-width</span> <span class="p">(</span><span class="nf">selected-frame</span><span class="p">)</span> <span class="mi">110</span><span class="p">)</span>
+<span class="c1">;; 设置高度</span>
+<span class="p">(</span><span class="nf">set-frame-height</span> <span class="p">(</span><span class="nf">selected-frame</span><span class="p">)</span> <span class="mi">33</span><span class="p">)</span></code></pre></div>
+<h2 id="关闭启动页面">关闭启动页面</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">inhibit-splash-screen</span> <span class="no">t</span><span class="p">)</span></code></pre></div>
+<h2 id="更改-tango-dark-主题注释的颜色">更改 tango-dark 主题注释的颜色</h2>
+
+<pre><code>// 1. 打开主题文件, Widows系统下的文件位置为:
+emacs-25.3_1-x86_64\share\emacs\25.3\etc\themes\tango-dark-theme.el
+// 2. 找到变量 cham-2(原值为: #73d216)
+// 3. 改为: #a7adba
+</code></pre>
+
+<h2 id="更改-emacs-color-theme-solarized-默认字体的颜色">更改 emacs-color-theme-solarized 默认字体的颜色</h2>
+
+<pre><code>// 1. 打开主题文件, Widows系统下的文件位置为:
+.emacs.d/emacs-color-theme-solarized/solarized-definitions.el
+// 2. 找到变量 base00(原值为: &quot;#657b83&quot;)
+(base00  &quot;#657b83&quot; &quot;#52676f&quot; &quot;#626262&quot; &quot;brightyellow&quot;  &quot;yellow&quot;)
+// 3. 将 &quot;#657b83&quot; 改为: &quot;#3D3E3F&quot; 或 &quot;#586e75&quot;
+</code></pre>
+
+<h2 id="插入-tab-字符的问题">插入 TAB 字符的问题</h2>
+
+<p>emacs 中 TAB 键的作用相当于格式化缩进和排版, 要是想插入TAB字符, 应输入 <code>C-q TAB</code></p>
+
+<pre><code>只按 TAB 并不能插入TAB字符, 插入 TAB 字符的命令为
+C-q TAB
+</code></pre>
+
+<h2 id="emacs设置背景色">emacs设置背景色</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; 设置背景色</span>
+<span class="p">(</span><span class="nv">set-background-color</span> <span class="s">&#34;black&#34;</span><span class="p">)</span>
+<span class="c1">;; 设置前景色</span>
+<span class="p">(</span><span class="nv">set-foreground-color</span> <span class="s">&#34;white&#34;</span><span class="p">)</span>
+<span class="c1">;; 设置区域前景色</span>
+<span class="p">(</span><span class="nv">set-face-background</span> <span class="ss">&#39;region</span> <span class="s">&#34;blue&#34;</span><span class="p">)</span>
+<span class="c1">;; 设置区域背景色</span>
+<span class="p">(</span><span class="nv">set-face-background</span> <span class="ss">&#39;region</span> <span class="s">&#34;blue&#34;</span><span class="p">)</span></code></pre></div>
+<h2 id="emacs-设置中英文字体">emacs 设置中英文字体</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">set-font</span> <span class="p">(</span><span class="nv">english</span> <span class="nv">chinese</span> <span class="nv">english-size</span> <span class="nv">chinese-size</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="nb">:font</span>
+                      <span class="p">(</span><span class="nf">format</span>   <span class="s">&#34;%s:pixelsize=%d&#34;</span>  <span class="nv">english</span> <span class="nv">english-size</span><span class="p">))</span>
+  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">charset</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">kana</span> <span class="nv">han</span> <span class="nv">symbol</span> <span class="nv">cjk-misc</span> <span class="nv">bopomofo</span><span class="p">))</span>
+    <span class="p">(</span><span class="nf">set-fontset-font</span> <span class="p">(</span><span class="nf">frame-parameter</span> <span class="no">nil</span> <span class="ss">&#39;font</span><span class="p">)</span> <span class="nv">charset</span>
+                      <span class="p">(</span><span class="nf">font-spec</span> <span class="nb">:family</span> <span class="nv">chinese</span> <span class="nb">:size</span> <span class="nv">chinese-size</span><span class="p">))))</span>
+
+<span class="p">(</span><span class="nv">set-font</span>   <span class="s">&#34;Source Code Pro&#34;</span> <span class="s">&#34;Hiragino Sans GB&#34;</span> <span class="mi">16</span> <span class="mi">20</span><span class="p">)</span></code></pre></div>
+<h2 id="在配置文件中添加设置">在配置文件中添加设置</h2>
+
+<h3 id="高亮匹配字符">高亮匹配字符</h3>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; highlight marked region</span>
+<span class="p">(</span><span class="nv">transient-mark-mode</span> <span class="no">t</span><span class="p">)</span></code></pre></div>
+<h2 id="语法高亮">语法高亮</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">global-font-lock-mode</span> <span class="no">t</span><span class="p">)</span></code></pre></div>
+<h2 id="配置">配置</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; show column number on status bar</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">column-number-mode</span> <span class="no">t</span><span class="p">)</span>
+
+<span class="c1">;; close toolbar</span>
+<span class="p">(</span><span class="nv">tool-bar-mode</span><span class="p">)</span>
+
+<span class="c1">;; enable mouse wheel support</span>
+<span class="p">(</span><span class="nv">mouse-wheel-mode</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">put</span> <span class="ss">&#39;upcase-region</span> <span class="ss">&#39;disabled</span> <span class="no">nil</span><span class="p">)</span>
+
+<span class="c1">;; 设置环境变量 &#34;HOME&#34; 和 &#34;PATH</span>
+<span class="p">(</span><span class="nv">setenv</span> <span class="s">&#34;HOME&#34;</span> <span class="s">&#34;C:/emacs_home&#34;</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">setenv</span> <span class="s">&#34;PATH&#34;</span> <span class="s">&#34;C:/emacs_home&#34;</span><span class="p">)</span>
+
+<span class="c1">;; 设置emacs默认打开文件的路径</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">default-directory</span> <span class="s">&#34;E:/emacs_workspace/&#34;</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">command-line-default-directory</span> <span class="s">&#34;E:/emacs_workspace/&#34;</span><span class="p">)</span>
+<span class="c1">;;(add-to-list &#39;load-path &#34;D:/emacs/&#34;)</span>
+
+<span class="c1">;;set tab width</span>
+<span class="p">(</span><span class="nb">setq-default</span> <span class="nv">tab-width</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="c1">;; 中文与外文字体设置</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">set-font</span> <span class="p">(</span><span class="nv">english</span> <span class="nv">chinese</span> <span class="nv">english-size</span> <span class="nv">chinese-size</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="nb">:font</span>
+                      <span class="p">(</span><span class="nf">format</span>   <span class="s">&#34;%s:pixelsize=%d&#34;</span>  <span class="nv">english</span> <span class="nv">english-size</span><span class="p">))</span>
+  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">charset</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">kana</span> <span class="nv">han</span> <span class="nv">symbol</span> <span class="nv">cjk-misc</span> <span class="nv">bopomofo</span><span class="p">))</span>
+    <span class="p">(</span><span class="nf">set-fontset-font</span> <span class="p">(</span><span class="nf">frame-parameter</span> <span class="no">nil</span> <span class="ss">&#39;font</span><span class="p">)</span> <span class="nv">charset</span>
+                      <span class="p">(</span><span class="nf">font-spec</span> <span class="nb">:family</span> <span class="nv">chinese</span> <span class="nb">:size</span> <span class="nv">chinese-size</span><span class="p">))))</span>
+
+<span class="p">(</span><span class="nv">set-font</span>   <span class="s">&#34;Source Code Pro&#34;</span> <span class="s">&#34;Consolas&#34;</span> <span class="mi">14</span> <span class="mi">16</span><span class="p">)</span>
+
+<span class="c1">;; 关闭启动页面</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">inhibit-startup-message</span> <span class="no">t</span><span class="p">)</span>
+
+<span class="c1">;; title设置成 &#34;文件名@Emacs&#34;</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">frame-title-format</span> <span class="s">&#34;%b@Emacs&#34;</span>
+
+<span class="c1">;; 高亮配匹配的字符</span>
+<span class="p">(</span><span class="nv">show-paren-mode</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">show-paren-style</span> <span class="ss">&#39;parentheses</span><span class="p">)</span></code></pre></div>
+<h2 id="安装packages">安装Packages</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; define function</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">install-package</span> <span class="p">(</span><span class="nv">package</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">not</span> <span class="p">(</span><span class="nv">package-installed-p</span> <span class="nv">package</span><span class="p">))</span>
+      <span class="p">(</span><span class="nv">package-install</span> <span class="nv">package</span><span class="p">)))</span>
+
+<span class="c1">;; install package</span>
+<span class="p">(</span><span class="nv">install-package</span> <span class="ss">&#39;dart-mode</span><span class="p">)</span></code></pre></div>
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/editor/editor-font/"> Editor Font</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/emacs/package/"> Package</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#显示行号">显示行号</a>
+<ul>
+<li><a href="#通过命令设置">通过命令设置</a></li>
+<li><a href="#配置文件里设置">配置文件里设置</a></li>
+</ul></li>
+<li><a href="#设置-tab">设置 tab</a>
+<ul>
+<li><a href="#在-emacs-配置文件中设置">在 .emacs 配置文件中设置</a></li>
+<li><a href="#将所有超过两个的连续空格使用tab替换掉">将所有超过两个的连续空格使用TAB替换掉</a></li>
+<li><a href="#将所有tab使用适当个数的空格替换掉">将所有TAB使用适当个数的空格替换掉</a></li>
+</ul></li>
+<li><a href="#设置启动时的窗口大小">设置启动时的窗口大小</a></li>
+<li><a href="#关闭启动页面">关闭启动页面</a></li>
+<li><a href="#更改-tango-dark-主题注释的颜色">更改 tango-dark 主题注释的颜色</a></li>
+<li><a href="#更改-emacs-color-theme-solarized-默认字体的颜色">更改 emacs-color-theme-solarized 默认字体的颜色</a></li>
+<li><a href="#插入-tab-字符的问题">插入 TAB 字符的问题</a></li>
+<li><a href="#emacs设置背景色">emacs设置背景色</a></li>
+<li><a href="#emacs-设置中英文字体">emacs 设置中英文字体</a></li>
+<li><a href="#在配置文件中添加设置">在配置文件中添加设置</a>
+<ul>
+<li><a href="#高亮匹配字符">高亮匹配字符</a></li>
+</ul></li>
+<li><a href="#语法高亮">语法高亮</a></li>
+<li><a href="#配置">配置</a></li>
+<li><a href="#安装packages">安装Packages</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

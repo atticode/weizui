@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angularjs on 微醉</title>
+    <link>http://weizui.org/categories/angularjs/</link>
+    <description>Recent content in Angularjs on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 02 Jul 2019 13:52:53 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angularjs Date Filter</title>
+      <link>http://weizui.org/code/angularjs/date-filter/</link>
+      <pubDate>Tue, 02 Jul 2019 13:52:53 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/angularjs/date-filter/</guid>
+      <description>Filter angularjs中的filter(过滤器)——格式化日期的date date过滤器的功能是基于要求的格式格式化一个日期成为一个字符串。 参数 参数 说明 yyyy 用4位数字</description>
+    </item>
+    
+  </channel>
+</rss>

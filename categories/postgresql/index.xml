@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postgresql on 微醉</title>
+    <link>http://weizui.org/categories/postgresql/</link>
+    <description>Recent content in Postgresql on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 Apr 2019 09:17:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PostgreSQL Basic</title>
+      <link>http://weizui.org/code/postgresql/postgresql-basic/</link>
+      <pubDate>Tue, 16 Apr 2019 09:17:08 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/postgresql/postgresql-basic/</guid>
+      <description>安装 登录 linux 登录 切换用户为 postgres 进入 PostgreSQL 的 Client $ su postgres $ psql Windows 登录 进入 PostgreSQL 的 Client shell $ psql -U postgres 创建用户 创建数据库</description>
+    </item>
+    
+  </channel>
+</rss>

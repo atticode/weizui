@@ -178,19 +178,18 @@ h3 {
   height: 3rem;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   cursor: pointer;
 }
-.mobilenav--btn {
-  width: 1rem;
-  height: 0.75rem;
+.header--mobilenav .header--mobilenav-menu svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0.8rem auto 0.7rem;
   display: block;
-  border-top: 0.15rem solid #ffc;
-  border-bottom: 0.15rem solid #ffc;
-  background-color: #ffc;
-  padding: 0.15rem 0;
-  margin: 1.125rem auto 0;
-  background-clip: content-box;
+}
+.header--mobilenav .icon-menu {
+  fill: #ffc;
+  stroke: #ffc;
 }
 .container {
   width: 100%;

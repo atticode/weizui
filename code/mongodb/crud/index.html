@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Crud
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    
+    <div class="header--mobilenav-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class="icon-menu"/></svg>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/angularjs">angularjs</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/git">git</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/java">java</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/latex">latex</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/postgresql">postgresql</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/vim">vim</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/website">website</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/android">android</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/angularjs">angularjs</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/editor">editor</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (5)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/git">git</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/java">java</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/latex">latex</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/orgmode">orgmode</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/other">other</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/php">php</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/postgresql">postgresql</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/vim">vim</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Crud</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2019-07-02 13:42 Tuesday </span>
+          <span class="meta--wordcount">字数: 125</span>
+        </section>
+        <div class="single--tags">
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h2 id="query-documents">Query Documents</h2>
+
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$lt</td>
+<td>小于</td>
+</tr>
+
+<tr>
+<td>$lte</td>
+<td>小于等于</td>
+</tr>
+
+<tr>
+<td>$gt</td>
+<td>大于</td>
+</tr>
+
+<tr>
+<td>$gte</td>
+<td>大于等于</td>
+</tr>
+
+<tr>
+<td>$ne</td>
+<td>不等于</td>
+</tr>
+
+<tr>
+<td>$in</td>
+<td>一个键对应多个值</td>
+</tr>
+
+<tr>
+<td>$nin</td>
+<td>同上取反, 一个键不对应指定值</td>
+</tr>
+
+<tr>
+<td>$or</td>
+<td>多个条件匹配, 可以嵌套 $in 使用</td>
+</tr>
+
+<tr>
+<td>$not</td>
+<td>同上取反, 查询与特定模式不匹配的文档</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// e.g. : { &lt;field1&gt;: { &lt;operator1&gt;: &lt;value1&gt; }, ... }
+</span><span class="c1">// $in
+</span><span class="c1"></span><span class="nx">db</span><span class="p">.</span><span class="nx">inventory</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span> <span class="nx">status</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$in</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&#34;A&#34;</span><span class="p">,</span> <span class="s2">&#34;D&#34;</span> <span class="p">]</span> <span class="p">}</span> <span class="p">}</span> <span class="p">)</span>
+<span class="c1">// $or
+</span><span class="c1"></span><span class="nx">db</span><span class="p">.</span><span class="nx">inventory</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span> <span class="nx">$or</span><span class="o">:</span> <span class="p">[</span> <span class="p">{</span> <span class="nx">status</span><span class="o">:</span> <span class="s2">&#34;A&#34;</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">qty</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$lt</span><span class="o">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span> <span class="p">)</span></code></pre></div>
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/emacs/markdown/"> Markdown</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/nodejs/mongoose/"> Mongoose</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#query-documents">Query Documents</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

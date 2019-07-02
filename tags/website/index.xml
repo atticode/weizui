@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on 微醉</title>
+    <link>http://weizui.org/tags/website/</link>
+    <description>Recent content in Website on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Jun 2019 09:12:47 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Website</title>
+      <link>http://weizui.org/code/other/website/</link>
+      <pubDate>Thu, 13 Jun 2019 09:12:47 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/other/website/</guid>
+      <description>常用 百度 Google GitHub 编程语言 MDN Web 文档(中文) TypeScript(英文) TypeScript(中文) 阮一峰 ECMAScript6 入门 Node.js(英文) Node.js(中文) Go Go(CN) Go(中</description>
+    </item>
+    
+  </channel>
+</rss>

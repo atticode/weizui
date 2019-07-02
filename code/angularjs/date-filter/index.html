@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Angularjs Date Filter
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    
+    <div class="header--mobilenav-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class="icon-menu"/></svg>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/angularjs">angularjs</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/git">git</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/java">java</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/latex">latex</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/postgresql">postgresql</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/vim">vim</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/website">website</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/android">android</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/angularjs">angularjs</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/editor">editor</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (5)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/git">git</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/java">java</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/latex">latex</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/orgmode">orgmode</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/other">other</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/php">php</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/postgresql">postgresql</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/vim">vim</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Angularjs Date Filter</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2019-07-02 13:52 Tuesday </span>
+          <span class="meta--wordcount">字数: 958</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/angularjs">Angularjs</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<h2 id="filter">Filter</h2>
+
+<p>angularjs中的filter(过滤器)——格式化日期的date
+date过滤器的功能是基于要求的格式格式化一个日期成为一个字符串。</p>
+
+<h2 id="参数">参数</h2>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>yyyy</td>
+<td>用4位数字表示年（例如：AD 1 =&gt; 0001, AD 2010 =&gt; 2010）</td>
+</tr>
+
+<tr>
+<td>yy</td>
+<td>用两位数字表示年（00-99）（例如：AD 2001 =&gt; 01, AD 2010 =&gt; 10）</td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>用一位数字代表年（例如：AD 1 =&gt; 1, AD 199 =&gt; 199）</td>
+</tr>
+
+<tr>
+<td>MMMM</td>
+<td>英文全称表示月（January-December）</td>
+</tr>
+
+<tr>
+<td>MMM</td>
+<td>英文缩写表示月（Jan-Dec）</td>
+</tr>
+
+<tr>
+<td>MM</td>
+<td>两位数字表示月（01-12）</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>月（1-12）</td>
+</tr>
+
+<tr>
+<td>dd</td>
+<td>两位数字表示日（01-31）</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td>日（1-31）</td>
+</tr>
+
+<tr>
+<td>EEEE</td>
+<td>英文全称的一周中的天（Sunday-Saturday）</td>
+</tr>
+
+<tr>
+<td>EEE</td>
+<td>英文缩写的一周中的天（Sun-Sat）</td>
+</tr>
+
+<tr>
+<td>HH</td>
+<td>两位数表示24小时制的时（00-23）</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td>24小时制的时（0-23）</td>
+</tr>
+
+<tr>
+<td>hh</td>
+<td>两位数字表示上午或下午的时（01-12）</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td>上午或下午的时（1-12）</td>
+</tr>
+
+<tr>
+<td>mm</td>
+<td>两位数字表示分（00-59）</td>
+</tr>
+
+<tr>
+<td>m</td>
+<td>分（0-59）</td>
+</tr>
+
+<tr>
+<td>ss</td>
+<td>两位数字表示秒（00-59）</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td>秒（0-59）</td>
+</tr>
+
+<tr>
+<td>sss</td>
+<td>毫秒（000-999）</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td>AM/PM</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td>4位数字（+符号）代表时区偏移量（-1200 &ndash; +1200）</td>
+</tr>
+
+<tr>
+<td>ww</td>
+<td>用两位数字表示一年的周数（00-53），第一周（01）是一年中的第一个星期四</td>
+</tr>
+
+<tr>
+<td>w</td>
+<td>一年的周数(0-53)，第一周（1）是一年中的第一个星期四</td>
+</tr>
+
+<tr>
+<td>G, GG, GGG</td>
+<td>年代字符串的缩写形式，例如‘AD’（公元）</td>
+</tr>
+
+<tr>
+<td>GGGG</td>
+<td>年代字符串的全称，例如‘Anno Domini’（公元）</td>
+</tr>
+</tbody>
+</table>
+
+<p>格式化字符串也提供了一些预定义的本地化格式，可以方便我们使用：</p>
+
+<p>medium：‘MMM d,y h:mm:ss a’ 例如：Sep 3, 2010 12:05:08 PM</p>
+
+<p>short：‘M/d/yy h:mm a’ 例如： 9/3/10 12:05 PM</p>
+
+<p>fullDate: ’EEEE,MMMM d,y’ 例如：Friday, September 3, 2010</p>
+
+<p>longDate: ‘MMMM d,y’ 例如：September 3, 2010</p>
+
+<p>mediumDate: ’MMM d,y’ 例如： Sep 3, 2010</p>
+
+<p>shortDate: ’M/d/y’ 例如： 9/3/10</p>
+
+<p>mediumTime: ’h:mm:ss a’ 例如：12:05:08 PM</p>
+
+<p>shortTime: ’h:mm a’  例如：12:05 PM</p>
+
+<p>格式化字符串可以包含文本值。这些需要被单引号包围（例如 “h ‘in the morning’”）,如果想输出一对单引号，就在一个序列中用两个双引号（例如：“h ‘o’’clock’”）</p>
+
+<h2 id="date过滤器的用法">date过滤器的用法：</h2>
+
+<h3 id="在html中用法">在html中用法</h3>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- 格式: {{ date_expression | date : format : timezone}} --&gt;</span>
+
+<span class="c">&lt;!-- e.g. --&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>{{1288323623006 | date:&#39;medium&#39;}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> <span class="c">&lt;!-- Oct 29, 2010 11:40:23 AM --&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>{{1288323623006 | date:&#39;yyyy-MM-dd HH:mm:ss Z&#39;}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> <span class="c">&lt;!-- 2010-10-29 11:40:23 +0800 --&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>{{&#39;1288323623006&#39; | date:&#39;MM/dd/yyyy @ h:mma&#39;}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span><span class="c">&lt;!-- 10/29/2010 @ 11:40AM --&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>{{&#39;1288323623006&#39; | date:&#34;MM/dd/yyyy &#39;at&#39; h:mma&#34;}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span><span class="c">&lt;!-- 10/29/2010 at 11:40AM --&gt;</span></code></pre></div>
+<h3 id="在javascript中的用法">在javascript中的用法：</h3>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 格式
+</span><span class="c1">// $filter(&#39;date&#39;)(date, format, timezone)
+</span><span class="c1"></span>
+<span class="c1">// e.g.
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="nx">$scope</span><span class="p">.</span><span class="nx">formatDate</span> <span class="o">=</span> <span class="nx">$filter</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)(</span><span class="nx">today</span><span class="p">,</span> <span class="s1">&#39;yyyy-MM-dd&#39;</span><span class="p">);</span>
+
+<span class="err">// result =&gt; 2015-01-28</span></code></pre></div>
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/nodejs/mongoose/"> Mongoose</a>
+      
+    </div>
+    <div>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#filter">Filter</a></li>
+<li><a href="#参数">参数</a></li>
+<li><a href="#date过滤器的用法">date过滤器的用法：</a>
+<ul>
+<li><a href="#在html中用法">在html中用法</a></li>
+<li><a href="#在javascript中的用法">在javascript中的用法：</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

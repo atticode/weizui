@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>
+      微醉 - Emacs 文件编码
+    </title>
+    <link rel="shortcut icon " type="images/x-icon" href="http://weizui.org/favicon.png">
+    <link href="http://weizui.org/css/style.css" rel="stylesheet" >
+    <link href="http://weizui.org/css/syntax.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+  
+  <h1 class="header--logobox">
+    <a class="header--logo" href="http://weizui.org/">微醉</a>
+  </h1>
+  
+  <nav id="nav" class="header--nav">
+    <ul class="nav--menu list-unstyled">
+      
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/code/">码记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/read/">札记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/note/">杂记</a>
+        
+      
+        
+        <li class="nav--item list-unstyled ">
+          <a href="/alltaxonomies/">全部</a>
+        
+      
+    </ul>
+  </nav>
+  
+  <div id="mobilenavBtn" class="header--mobilenav">
+    
+    <div class="header--mobilenav-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class="icon-menu"/></svg>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      
+<div class="sidebar">
+  
+<div class="tags--box">
+  <h2 class="tags--title">标签</h2>
+  <ul class="tags--list list-unstyled">
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/angularjs">angularjs</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/code">code</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/command">command</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/docker">docker</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/editor">editor</a>
+      <span class="tags--number"> (5)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/emacs">emacs</a>
+      <span class="tags--number"> (4)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/git">git</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/java">java</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/latex">latex</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/markdown">markdown</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/operation">operation</a>
+      <span class="tags--number"> (2)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/postgresql">postgresql</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/vim">vim</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+    <li class="tags--item list-unstyled">
+     <a class="tags--name" href="/tags/website">website</a>
+      <span class="tags--number"> (1)</span>
+    </li>
+    
+  </ul>
+</div>
+  
+<div class="categories--box">
+  <h2 class="categories--title">分类</h2>
+  <ul class="categories--list list-unstyled">
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/android">android</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/angularjs">angularjs</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/docker">docker</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/editor">editor</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/emacs">emacs</a>
+      <span class="categories--number"> (5)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/git">git</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/java">java</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/latex">latex</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/markdown">markdown</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/orgmode">orgmode</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/other">other</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/php">php</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/postgresql">postgresql</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/vim">vim</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+  </ul>   
+</div>
+</div>
+
+<div class="single main main-offset">
+  <div class="single--box">
+    <div class="single--head">
+      <h1 class="single--title">Emacs 文件编码</h1>
+      <aside class="single--meta">
+        <section>
+          <span class="meta--date"> 2019-06-08 18:50 Saturday </span>
+          <span class="meta--wordcount">字数: 350</span>
+        </section>
+        <div class="single--tags">
+          
+            <ul class="list-unstyled">
+              <li class="single--tagitem list-unstyled text-italic">标签: </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/emacs">emacs</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/editor">editor</a>
+              </li>
+              
+              <li class="single--tagitem list-unstyled">
+                <a href="http://weizui.org/tags/code">code</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </aside>
+    </div>
+    <div>
+      <article class="single--content">
+        
+
+<p>Emacs 打开文件时首先根据一个包含许多编码系统的列表依次进行判断,
+直到遇到能够识别的编码系统就停止</p>
+
+<h2 id="查看当前buffer的编码">查看当前buffer的编码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nv">M-x</span> <span class="nv">describe-coding-system</span></code></pre></div>
+<h2 id="列出所有支持的编码">列出所有支持的编码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">C-x</span> <span class="nv">&lt;RET&gt;</span> <span class="nv">r</span> <span class="nv">&lt;TAB&gt;</span></code></pre></div>
+<h2 id="打开文件出现乱码-修改文件的编码">打开文件出现乱码，修改文件的编码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">M-x</span> <span class="nv">revert-buffer-with-coding-system</span> <span class="nv">RET</span>
+  <span class="nv">然后输入编码名字:</span> <span class="nv">utf-8</span> <span class="nv">或</span> <span class="nv">chinese-gbk</span></code></pre></div>
+<h2 id="保存时指定文件编码-改变当前文件编码">保存时指定文件编码/改变当前文件编码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">M-x</span> <span class="nv">set-buffer-file-coding-system</span> <span class="nv">RET</span>
+  <span class="nv">然后输入编码名字:</span> <span class="nv">utf-8</span> <span class="nv">或</span> <span class="nv">chinese-gbk</span>
+
+  <span class="nv">命令为:</span> <span class="nv">C-x</span> <span class="nv">RET</span> <span class="nv">f</span> <span class="nv">utf-8</span></code></pre></div>
+<h2 id="以指定的编码重新读入文件">以指定的编码重新读入文件</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">M-x</span> <span class="nv">revert-buffer-with-coding-system</span> <span class="nv">RET</span>
+  <span class="nv">然后输入编码名字:</span> <span class="nv">utf-8</span> <span class="nv">或</span> <span class="nv">chinese-gbk</span>
+
+  <span class="err">#</span> <span class="nv">命令为:</span> <span class="nv">C-x</span> <span class="nv">RET</span> <span class="nv">r</span> <span class="nv">utf-8</span></code></pre></div>
+<h2 id="不改变当前文件-以指定编码另存为">不改变当前文件, 以指定编码另存为</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">M-x</span> <span class="nv">universal-coding-system-argument</span> <span class="nv">RET</span> <span class="nv">utf-8</span>
+  <span class="err">#</span> <span class="nv">命令为:</span> <span class="nv">C-x</span> <span class="nv">RET</span> <span class="nv">c</span> <span class="nv">utf-8</span> <span class="nv">RET</span> <span class="nv">C-x</span> <span class="nv">C-w</span> <span class="nv">RET</span></code></pre></div>
+<h2 id="文件格式转换">文件格式转换</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="nv">dos-&gt;unix:</span> <span class="nv">M-x</span> <span class="nv">set-buffer-file-coding-system</span> <span class="nv">unix</span>
+  <span class="nv">unix-&gt;dos:</span> <span class="nv">M-x</span> <span class="nv">set-buffer-file-coding-system</span> <span class="nv">dos</span>
+  <span class="err">#</span> <span class="nv">命令为:</span> <span class="nv">C-x</span> <span class="nv">RET</span> <span class="nv">f</span> <span class="nv">unix/dos</span></code></pre></div>
+<h2 id="问题-从其他窗口复制内容粘贴到emacs中-出现乱码">问题: 从其他窗口复制内容粘贴到Emacs中，出现乱码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; 将下面一行注释掉</span>
+<span class="c1">;;(set-selection-coding-system &#39;utf-8)</span></code></pre></div>
+<h2 id="在配置文件中设置编码">在配置文件中设置编码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="c1">;; 设置默认的buffer编码</span>
+<span class="p">(</span><span class="nv">setq</span> <span class="nv">default-buffer-file-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="c1">;; 优先选择的编码</span>
+<span class="p">(</span><span class="nv">prefer-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">set-language-environment</span> <span class="s">&#34;UTF-8&#34;</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">set-terminal-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">set-keyboard-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">set-clipboard-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">setq</span> <span class="nv">locale-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="c1">;; 设置buffer的编码</span>
+<span class="p">(</span><span class="nv">set-buffer-file-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">set-selection-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">modify-coding-system-alist</span> <span class="ss">&#39;process</span> <span class="s">&#34;*&#34;</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
+
+<span class="c1">;; 指定后缀名的字符编码</span>
+<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;file-coding-system-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.txt&#34;</span> <span class="o">.</span> <span class="nv">utf-8-unix</span><span class="p">)</span> <span class="p">)</span></code></pre></div>
+      </article>
+    </div>
+    <nav class="single--nav">
+    <div>
+      
+      <span>上一篇:</span>
+      <a href="http://weizui.org/code/postgresql/postgresql-basic/"> PostgreSQL Basic</a>
+      
+    </div>
+    <div>
+      
+      <span>下一篇:</span>
+      <a href="http://weizui.org/code/editor/editor-font/"> Editor Font</a>
+      
+    </div>
+    </nav>
+  </div>
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#查看当前buffer的编码">查看当前buffer的编码</a></li>
+<li><a href="#列出所有支持的编码">列出所有支持的编码</a></li>
+<li><a href="#打开文件出现乱码-修改文件的编码">打开文件出现乱码，修改文件的编码</a></li>
+<li><a href="#保存时指定文件编码-改变当前文件编码">保存时指定文件编码/改变当前文件编码</a></li>
+<li><a href="#以指定的编码重新读入文件">以指定的编码重新读入文件</a></li>
+<li><a href="#不改变当前文件-以指定编码另存为">不改变当前文件, 以指定编码另存为</a></li>
+<li><a href="#文件格式转换">文件格式转换</a></li>
+<li><a href="#问题-从其他窗口复制内容粘贴到emacs中-出现乱码">问题: 从其他窗口复制内容粘贴到Emacs中，出现乱码</a></li>
+<li><a href="#在配置文件中设置编码">在配置文件中设置编码</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <span>&copy;2018 </span>
+  <span>Powered By </span>
+  <a href="http://gohugo.io/" target="_blank">Hugo</a>
+</footer>
+    <script src="http://weizui.org/js/index.js"></script>
+  </body>
+</html>

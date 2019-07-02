@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on 微醉</title>
+    <link>http://weizui.org/categories/vim/</link>
+    <description>Recent content in Vim on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Jun 2019 14:37:03 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim Setting</title>
+      <link>http://weizui.org/code/vim/vim-setting/</link>
+      <pubDate>Wed, 12 Jun 2019 14:37:03 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/vim/vim-setting/</guid>
+      <description>Vim 设置状态栏 &amp;#34;statusline 设置状态栏 set statusline= set statusline+=%7*\[%n] &amp;#34;buffernr set statusline+=%1*\ %&amp;lt;%F\ &amp;#34;文件路径 set statusline+=%2*\ %y\ &amp;#34;文件类型 set statusline+=%3*\ %{&amp;#39;&amp;#39;.(&amp;amp;fenc!=&amp;#39;&amp;#39;?&amp;amp;fenc:&amp;amp;enc).&amp;#39;&amp;#39;} &amp;#34;编码1 set statusline+=%3*\ %{(&amp;amp;bomb?\&amp;#34;,BOM\&amp;#34;:\&amp;#34;\&amp;#34;)}\ &amp;#34;编码2 set statusline+=%4*\ %{&amp;amp;ff}\ &amp;#34;文件系统(dos/</description>
+    </item>
+    
+  </channel>
+</rss>

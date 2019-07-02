@@ -5,15 +5,24 @@
     <link>http://weizui.org/tags/</link>
     <description>Recent content in Tags on 微醉</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Feb 2019 17:05:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2019 13:52:53 +0800</lastBuildDate>
     
 	<atom:link href="http://weizui.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Angularjs</title>
+      <link>http://weizui.org/tags/angularjs/</link>
+      <pubDate>Tue, 02 Jul 2019 13:52:53 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/angularjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Code</title>
       <link>http://weizui.org/tags/code/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      <pubDate>Thu, 13 Jun 2019 19:00:16 +0800</pubDate>
       
       <guid>http://weizui.org/tags/code/</guid>
       <description></description>
@@ -22,7 +31,7 @@
     <item>
       <title>Command</title>
       <link>http://weizui.org/tags/command/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      <pubDate>Wed, 12 Jun 2019 10:22:05 +0800</pubDate>
       
       <guid>http://weizui.org/tags/command/</guid>
       <description></description>
@@ -40,7 +49,7 @@
     <item>
       <title>Editor</title>
       <link>http://weizui.org/tags/editor/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      <pubDate>Thu, 13 Jun 2019 19:00:16 +0800</pubDate>
       
       <guid>http://weizui.org/tags/editor/</guid>
       <description></description>
@@ -49,9 +58,36 @@
     <item>
       <title>Emacs</title>
       <link>http://weizui.org/tags/emacs/</link>
-      <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
+      <pubDate>Wed, 12 Jun 2019 10:22:05 +0800</pubDate>
       
       <guid>http://weizui.org/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://weizui.org/tags/git/</link>
+      <pubDate>Wed, 12 Jun 2019 14:26:00 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://weizui.org/tags/java/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:33 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>http://weizui.org/tags/latex/</link>
+      <pubDate>Wed, 12 Jun 2019 14:36:07 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/latex/</guid>
       <description></description>
     </item>
     
@@ -70,6 +106,33 @@
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
       
       <guid>http://weizui.org/tags/operation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgresql</title>
+      <link>http://weizui.org/tags/postgresql/</link>
+      <pubDate>Tue, 16 Apr 2019 09:17:08 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://weizui.org/tags/vim/</link>
+      <pubDate>Wed, 12 Jun 2019 14:37:03 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>http://weizui.org/tags/website/</link>
+      <pubDate>Thu, 13 Jun 2019 09:12:47 +0800</pubDate>
+      
+      <guid>http://weizui.org/tags/website/</guid>
       <description></description>
     </item>
     

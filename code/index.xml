@@ -11,6 +11,258 @@
     
     
     <item>
+      <title>Angularjs Date Filter</title>
+      <link>http://weizui.org/code/angularjs/date-filter/</link>
+      <pubDate>Tue, 02 Jul 2019 13:52:53 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/angularjs/date-filter/</guid>
+      <description>Filter angularjs中的filter(过滤器)——格式化日期的date date过滤器的功能是基于要求的格式格式化一个日期成为一个字符串。 参数 参数 说明 yyyy 用4位数字</description>
+    </item>
+    
+    <item>
+      <title>Mongoose</title>
+      <link>http://weizui.org/code/nodejs/mongoose/</link>
+      <pubDate>Tue, 02 Jul 2019 13:51:41 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/nodejs/mongoose/</guid>
+      <description>Mongoose 参考手册 Mongoose 是什么? 一般我们不直接用MongoDB的函数来操作MongoDB数据库 Mongose就是一套操作MongoDB数据库的接口. Schema 一种以文件形式存储的数</description>
+    </item>
+    
+    <item>
+      <title>Crud</title>
+      <link>http://weizui.org/code/mongodb/crud/</link>
+      <pubDate>Tue, 02 Jul 2019 13:42:13 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/mongodb/crud/</guid>
+      <description>Query Documents Operators 说明 $lt 小于 $lte 小于等于 $gt 大于 $gte 大于等于 $ne 不等于 $in 一个键对应多个值 $nin 同上取反, 一个键不对应指定值 $or 多个条件匹配, 可以嵌套 $in 使用 $not 同上取反, 查询与特定模式不匹配</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://weizui.org/code/emacs/markdown/</link>
+      <pubDate>Tue, 25 Jun 2019 14:31:02 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/markdown/</guid>
+      <description>Emacs Markdown Mode 入门 (1) markdown是一种非常适合文字工作者的轻量标记语言，相比富文本编辑工具，它能使写作者更加专注于内容的生产，而不是在繁琐的布局和格式上浪费时间。 现</description>
+    </item>
+    
+    <item>
+      <title>Emacs Dired</title>
+      <link>http://weizui.org/code/emacs/dired/</link>
+      <pubDate>Tue, 25 Jun 2019 14:12:51 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/dired/</guid>
+      <description>文件操作 常用操作 shell 命令 强大的重命名功能 排序和过滤 子目录操作 其他功能 nc.el dired dired 是 Emacs 自带的文件管理器，操作非常方便，再加上一些扩展之后无疑是 一个理想的文件管理器。。 Mark &amp;amp;</description>
+    </item>
+    
+    <item>
+      <title>Http Header Field</title>
+      <link>http://weizui.org/code/network/http-header/</link>
+      <pubDate>Tue, 25 Jun 2019 14:03:51 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/network/http-header/</guid>
+      <description>#+TITLE: HTTP Header 参数列表 ** Request Header fields | 参数名 | 说明 | 示例 | |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| | Accept | 接收的内容类型 | Accept: text/plain | | Accept-Charset | 接收的字符编码 | Accept-Charset: utf-8 | | Accept-Datetime | 接受的版本时间 | Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT | | Accept-Encoding | 接受的编码格式</description>
+    </item>
+    
+    <item>
+      <title>Linux Font</title>
+      <link>http://weizui.org/code/linux/font/</link>
+      <pubDate>Tue, 25 Jun 2019 14:00:13 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/linux/font/</guid>
+      <description>Fedora 字体安装 安装 Inconsolata 字体 在 /usr/share/fonts/ 目录下新建文件夹 shell $ mkdir /usr/share/fonts/Inconsolata 将字体文件复制到新建的目录下 shell cp Inconsolata-Regular.ttf /usr/share/fonts/Inconsolata Linux 查看软件位置 # 查看软件的目录位置 e.g.: whereis vim $ whereis [softwareName] # 查看软件运行文件所在目录 e.g.: which</description>
+    </item>
+    
+    <item>
+      <title>Editor Color</title>
+      <link>http://weizui.org/code/editor/editor-color/</link>
+      <pubDate>Thu, 13 Jun 2019 19:00:16 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/editor/editor-color/</guid>
+      <description>背景色 颜色 16进制 RGB值 深色的豆沙绿 #C7EDCC (199, 237, 204) 浅点的豆沙绿 #CCE8CF (204, 232, 207) 浅黄色 #FFFFCC (255, 255, 204) 桃粉色 #FFDAB9 (255, 218, 185) 字体颜色 颜色 16进制 RGB值 红色 #CA0000 (202, 0, 0) 红粉色 #CA004B (202, 0, 75) 草绿色 #577909 (87, 121,</description>
+    </item>
+    
+    <item>
+      <title>Init</title>
+      <link>http://weizui.org/code/emacs/init/</link>
+      <pubDate>Thu, 13 Jun 2019 18:53:08 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/init/</guid>
+      <description>(require &amp;#39;package) (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa&amp;#34; . &amp;#34;http://melpa.org/packages/&amp;#34;) t) ;; (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa-stable&amp;#34; . &amp;#34;http://stable.melpa.org/packages/&amp;#34;) t) ;; (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;marmalade&amp;#34; . &amp;#34;http://marmalade-repo.org/packages/&amp;#34;) t) (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;org&amp;#34; . &amp;#34;http://orgmode.org/elpa/&amp;#34;) t) ;;(add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;gnu&amp;#34; . &amp;#34;https://elpa.gnu.org/packages/&amp;#34;) t) ;; Added by Package.el. This must come before configurations of ;; installed packages. Don&amp;#39;t delete this line. If you don&amp;#39;t want it, ;; just comment it out by adding a semicolon to the start of the line. ;; You may delete these explanatory comments. (package-initialize) ;;-------------------------------------------------</description>
+    </item>
+    
+    <item>
+      <title>Registration</title>
+      <link>http://weizui.org/code/other/registration/</link>
+      <pubDate>Thu, 13 Jun 2019 09:26:07 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/other/registration/</guid>
+      <description>#+TITLE: 编辑器注册 *** EditPlus注册码 #+BEGIN_EXAMPLE edit 7664C-BF930-82E1D-C974E-B91E0 editplus 534B8-85DD8-85193-22903-1E2E1 #+END_EXAMPLE *** Sublime3143 #+BEGIN_EXAMPLE —– BEGIN LICENSE —– TwitterInc 200 User License EA7E-890007 1D77F72E 390CDD93 4DCBA022 FAF60790 61AA12C0 A37081C5 D0316412 4584D136 94D7F7D4 95BC8C1C 527DA828 560BB037 D1EDDD8C AE7B379F 50C9D69D B35179EF 2FE898C4 8E4277A8 555CE714 E1FB0E43 D5D52613 C3D12E98 BC49967F 7652EED2 9D2D2E61 67610860 6D338B72 5CF95C69 E36B85CC 84991F19 7575D828 470A92AB —— END LICENSE —— #+END_EXAMPLE *** MarkdownPad2 注</description>
+    </item>
+    
+    <item>
+      <title>Orgmode Syntax</title>
+      <link>http://weizui.org/code/markup/orgmode/</link>
+      <pubDate>Thu, 13 Jun 2019 09:21:56 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/markup/orgmode/</guid>
+      <description>标题 标题的标记为: 一至多个 &amp;lsquo;*&amp;lsquo; * 一级标题 ** 二级标题 *** 三级标题 **** 四级标题 ***** 五级标题 ****** 六级标题 段落 起始直接书写内容即为段落, 段落之间以空行分隔 列表 列表包括: 有序列表,</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://weizui.org/code/markup/markdown/</link>
+      <pubDate>Thu, 13 Jun 2019 09:20:31 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/markup/markdown/</guid>
+      <description>标题 标题以一到六个 &amp;lsquo;#&amp;rsquo; 表示, 井号与内容之间以一个空格分隔 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 段落 以内容为起始, 即为一段落, 不同段落之间以一</description>
+    </item>
+    
+    <item>
+      <title>Markup Language</title>
+      <link>http://weizui.org/code/markup/language/</link>
+      <pubDate>Thu, 13 Jun 2019 09:20:10 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/markup/language/</guid>
+      <description>#+TITLE: 纯文本标记语言 Markdown 一种简单的纯文本标记语言, 文件类型为 &amp;lsquo;.md&amp;rsquo;, 可以生成 html 格式文件 编辑器: 多数常用的支持语法高亮的文本编辑器 Org mode 纯文本系统, 文件类型为 &amp;lsquo;.org&amp;rsquo;, 可以生成 html, tex, md 等</description>
+    </item>
+    
+    <item>
+      <title>Android Environment</title>
+      <link>http://weizui.org/code/android/environment/</link>
+      <pubDate>Thu, 13 Jun 2019 09:16:28 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/android/environment/</guid>
+      <description>Android SDK 环境变量 // 1. 新建 ANDROID_HOME ANDROID_HOME C:\android\sdk // 2. 添加path变量 Path %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;</description>
+    </item>
+    
+    <item>
+      <title>PHP Environment</title>
+      <link>http://weizui.org/code/php/environment/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:41 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/php/environment/</guid>
+      <description>Windows 下载 安装 配置 配置 Apache Httpd 打开 apache/conf/httpd.conf 文件 Apache 添加 PHP 模块 # 1. 添加PHP模块 LoadModule php5_module &amp;#34;C:/php-5.6.31/php5apache2_4.dll&amp;#34; # 2. php.ini 文件所在目录 PHPIniDir &amp;#34;C:/php-5.6.31&amp;#34; # 3. 需要php解析的文件类型 AddType application/x-httpd-php .php 配置 PHP</description>
+    </item>
+    
+    <item>
+      <title>Java Environment</title>
+      <link>http://weizui.org/code/java/environment/</link>
+      <pubDate>Thu, 13 Jun 2019 09:15:33 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/java/environment/</guid>
+      <description>Windows 下载JDK 根据系统, 选择下载32位或64位的 &amp;lsquo;.exe&amp;rsquo;格式文件 JDK 下载地址 安装JDK 双击下载的执行文件, 安装到指定目录, 比如 &amp;lsquo;C:/java/jdk&amp;rsquo; 安装 JDK 的</description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>http://weizui.org/code/other/website/</link>
+      <pubDate>Thu, 13 Jun 2019 09:12:47 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/other/website/</guid>
+      <description>常用 百度 Google GitHub 编程语言 MDN Web 文档(中文) TypeScript(英文) TypeScript(中文) 阮一峰 ECMAScript6 入门 Node.js(英文) Node.js(中文) Go Go(CN) Go(中</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://weizui.org/code/other/software/</link>
+      <pubDate>Thu, 13 Jun 2019 09:11:38 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/other/software/</guid>
+      <description>#+TITLE: 软件安装列表 Windows 编程开发基础环境 JDK(Java) Nodejs Go Python PHP + Apache Httpd Android SDK(Android Studio) Git MySQL 编辑器 Emacs Vim VSCode Atom CodeLite IDEA Android Studio Eclipse AngularIDE Sublime EmEditor Notepad++ EditPlus PyCharm Brackets 前端相关 vue-cli weex-toolkit create-react-app create-react-native-app @angular/cli express-generator 其他 7-Zip VirtualBox Lantern SQlyog Foxmail Chrome FireFox MikTeX UltraISO VNote Sourcetree TortoiseGit FileZilla</description>
+    </item>
+    
+    <item>
+      <title>Connect</title>
+      <link>http://weizui.org/code/nodejs/connect/</link>
+      <pubDate>Thu, 13 Jun 2019 09:04:36 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/nodejs/connect/</guid>
+      <description>中间件的简单理解 简单来说，中间件由函数组成，它除了处理req和res对象之外，还接收一个next函数来做流控制。 ——引自《了不起的Node.js》 Connect 使用 // 引入模</description>
+    </item>
+    
+    <item>
+      <title>Command</title>
+      <link>http://weizui.org/code/vim/command/</link>
+      <pubDate>Thu, 13 Jun 2019 08:58:11 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/vim/command/</guid>
+      <description>** vim 常用命令 | 命令 | 说明 | |&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-| | C-c | 退出编辑模式 | | C-[ | 退出编辑模式 | | ESC | 退出编辑模式 | | C-o | 临时退出编辑模式(输入一条命令后回到编辑模式) |</description>
+    </item>
+    
+    <item>
+      <title>Vim Setting</title>
+      <link>http://weizui.org/code/vim/vim-setting/</link>
+      <pubDate>Wed, 12 Jun 2019 14:37:03 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/vim/vim-setting/</guid>
+      <description>Vim 设置状态栏 &amp;#34;statusline 设置状态栏 set statusline= set statusline+=%7*\[%n] &amp;#34;buffernr set statusline+=%1*\ %&amp;lt;%F\ &amp;#34;文件路径 set statusline+=%2*\ %y\ &amp;#34;文件类型 set statusline+=%3*\ %{&amp;#39;&amp;#39;.(&amp;amp;fenc!=&amp;#39;&amp;#39;?&amp;amp;fenc:&amp;amp;enc).&amp;#39;&amp;#39;} &amp;#34;编码1 set statusline+=%3*\ %{(&amp;amp;bomb?\&amp;#34;,BOM\&amp;#34;:\&amp;#34;\&amp;#34;)}\ &amp;#34;编码2 set statusline+=%4*\ %{&amp;amp;ff}\ &amp;#34;文件系统(dos/</description>
+    </item>
+    
+    <item>
+      <title>Latex Chinese</title>
+      <link>http://weizui.org/code/latex/latex-chinese/</link>
+      <pubDate>Wed, 12 Jun 2019 14:36:07 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/latex/latex-chinese/</guid>
+      <description>编译器 XeLaTeX 支持中文的方法 以下方法需使用 XeLaTeX 编译 * 方法一: 导入以下宏包 \usepackage{fontspec, xunicode, xltxtra} \setmainfont{KaiTi} 方法二: 导入 xeCJK 宏包 \usepackage{xeCJK} 方法三: 使用 CTeX 宏包 \documentclass[UTF8]{ctexart} beamer 支持中文的方法 \usepackage{fontspec, xunicode, xltxtra} \setmainfont{KaiTi} \setsansfont{KaiTi} 设置导出的PDF页面大</description>
+    </item>
+    
+    <item>
+      <title>Git Command</title>
+      <link>http://weizui.org/code/git/git-command/</link>
+      <pubDate>Wed, 12 Jun 2019 14:26:00 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/git/git-command/</guid>
+      <description>Git 本地新建分支并关联远程分支 $ git checkout -b dev origin/dev Git 修改远程版本库 方法一 直接修改 $ git remote origin set-url [url] 方法二 先删除，再添加 $ git remote rm origin $ git remote add origin [url]</description>
+    </item>
+    
+    <item>
+      <title>Package</title>
+      <link>http://weizui.org/code/emacs/package/</link>
+      <pubDate>Wed, 12 Jun 2019 10:29:14 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/package/</guid>
+      <description>org mode js2 mode go mode web mode vue mode php mode emmet mode markdown mode AUCTex one dark theme solarized theme company mode smartparens mode helm mode spaceemacs ansi term term shell eshell dired calendar</description>
+    </item>
+    
+    <item>
+      <title>Emacs Setting</title>
+      <link>http://weizui.org/code/emacs/emacs-setting/</link>
+      <pubDate>Wed, 12 Jun 2019 10:22:05 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-setting/</guid>
+      <description>显示行号 通过命令设置 设置当前 Buffer 显示行号 M-x linum-mode 设置所有 Buffer 显示行号 M-x global-linum-mode 配置文件里设置 ;; 显示行号 (global-linum-mode t) ;; 或者 (global-linum-mode 1) 设置 tab 在 .emacs 配置文件中设置 ;; tab改为空格 (setq-default indent-tabs-mode nil) ;; tab不改</description>
+    </item>
+    
+    <item>
+      <title>Editor Font</title>
+      <link>http://weizui.org/code/editor/editor-font/</link>
+      <pubDate>Wed, 12 Jun 2019 09:58:14 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/editor/editor-font/</guid>
+      <description>Source Code Pro 免费的等宽字体 - GitHub地址 Roboto Mono Google出品免费等宽字体 Fira Mono Mozilla 出品免费等宽字体 - GitHub地址 Inconsolata(Google) 免费的等宽字体 - GoogleFont地址(需翻墙</description>
+    </item>
+    
+    <item>
+      <title>Emacs 文件编码</title>
+      <link>http://weizui.org/code/emacs/emacs-encoding/</link>
+      <pubDate>Sat, 08 Jun 2019 18:50:17 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-encoding/</guid>
+      <description>Emacs 打开文件时首先根据一个包含许多编码系统的列表依次进行判断, 直到遇到能够识别的编码系统就停止 查看当前buffer的编码 M-x describe-coding-system 列出所有支持的编码 C-x &amp;lt;RET&amp;gt; r &amp;lt;TAB&amp;gt; 打开文件出现</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Basic</title>
+      <link>http://weizui.org/code/postgresql/postgresql-basic/</link>
+      <pubDate>Tue, 16 Apr 2019 09:17:08 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/postgresql/postgresql-basic/</guid>
+      <description>安装 登录 linux 登录 切换用户为 postgres 进入 PostgreSQL 的 Client $ su postgres $ psql Windows 登录 进入 PostgreSQL 的 Client shell $ psql -U postgres 创建用户 创建数据库</description>
+    </item>
+    
+    <item>
       <title>Emacs 操作</title>
       <link>http://weizui.org/code/emacs/emacs-operation/</link>
       <pubDate>Thu, 21 Feb 2019 17:05:22 +0800</pubDate>
@@ -52,7 +304,7 @@
       <pubDate>Fri, 09 Feb 2018 16:20:48 +0800</pubDate>
       
       <guid>http://weizui.org/code/emacs/emacs-command/</guid>
-      <description>Emacs 常用命令 移动 快捷键 命令 说明 C-f 向前移动一个字符 C-b 向后移动一个字符 C-p 向上移动一个字符 C-n 向下移动一个字符 C-M-S-v M-x scroll-other-window-down 向下滚动其他窗口 C-M-v M-x scroll-other-window-up 向上滚动其他窗口 文件 快捷键 命令 description</description>
+      <description>Emacs 常用命令 说明 命令 说明 C CONTROL M Alt 或 META 或 EDIT C-x 字符扩展, 之后输入另一个字符或组合键 M-x 命令名扩展, 之后输入一个命令名 移动 快捷键 命令 说明 C-f 向前(右)移动一个字符 C-b 向后(左</description>
     </item>
     
     <item>

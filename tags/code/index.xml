@@ -5,10 +5,37 @@
     <link>http://weizui.org/tags/code/</link>
     <description>Recent content in Code on 微醉</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Feb 2019 17:05:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jun 2019 19:00:16 +0800</lastBuildDate>
     
 	<atom:link href="http://weizui.org/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Editor Color</title>
+      <link>http://weizui.org/code/editor/editor-color/</link>
+      <pubDate>Thu, 13 Jun 2019 19:00:16 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/editor/editor-color/</guid>
+      <description>背景色 颜色 16进制 RGB值 深色的豆沙绿 #C7EDCC (199, 237, 204) 浅点的豆沙绿 #CCE8CF (204, 232, 207) 浅黄色 #FFFFCC (255, 255, 204) 桃粉色 #FFDAB9 (255, 218, 185) 字体颜色 颜色 16进制 RGB值 红色 #CA0000 (202, 0, 0) 红粉色 #CA004B (202, 0, 75) 草绿色 #577909 (87, 121,</description>
+    </item>
+    
+    <item>
+      <title>Emacs Setting</title>
+      <link>http://weizui.org/code/emacs/emacs-setting/</link>
+      <pubDate>Wed, 12 Jun 2019 10:22:05 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-setting/</guid>
+      <description>显示行号 通过命令设置 设置当前 Buffer 显示行号 M-x linum-mode 设置所有 Buffer 显示行号 M-x global-linum-mode 配置文件里设置 ;; 显示行号 (global-linum-mode t) ;; 或者 (global-linum-mode 1) 设置 tab 在 .emacs 配置文件中设置 ;; tab改为空格 (setq-default indent-tabs-mode nil) ;; tab不改</description>
+    </item>
+    
+    <item>
+      <title>Emacs 文件编码</title>
+      <link>http://weizui.org/code/emacs/emacs-encoding/</link>
+      <pubDate>Sat, 08 Jun 2019 18:50:17 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/emacs/emacs-encoding/</guid>
+      <description>Emacs 打开文件时首先根据一个包含许多编码系统的列表依次进行判断, 直到遇到能够识别的编码系统就停止 查看当前buffer的编码 M-x describe-coding-system 列出所有支持的编码 C-x &amp;lt;RET&amp;gt; r &amp;lt;TAB&amp;gt; 打开文件出现</description>
+    </item>
     
     <item>
       <title>Emacs 操作</title>
@@ -25,7 +52,7 @@
       <pubDate>Fri, 09 Feb 2018 16:20:48 +0800</pubDate>
       
       <guid>http://weizui.org/code/emacs/emacs-command/</guid>
-      <description>Emacs 常用命令 移动 快捷键 命令 说明 C-f 向前移动一个字符 C-b 向后移动一个字符 C-p 向上移动一个字符 C-n 向下移动一个字符 C-M-S-v M-x scroll-other-window-down 向下滚动其他窗口 C-M-v M-x scroll-other-window-up 向上滚动其他窗口 文件 快捷键 命令 description</description>
+      <description>Emacs 常用命令 说明 命令 说明 C CONTROL M Alt 或 META 或 EDIT C-x 字符扩展, 之后输入另一个字符或组合键 M-x 命令名扩展, 之后输入一个命令名 移动 快捷键 命令 说明 C-f 向前(右)移动一个字符 C-b 向后(左</description>
     </item>
     
   </channel>

@@ -3,6 +3,146 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://weizui.org/code/angularjs/date-filter/</loc>
+    <lastmod>2019-07-02T13:52:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/nodejs/mongoose/</loc>
+    <lastmod>2019-07-02T13:51:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/mongodb/crud/</loc>
+    <lastmod>2019-07-02T13:42:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/markdown/</loc>
+    <lastmod>2019-06-25T14:31:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/dired/</loc>
+    <lastmod>2019-06-25T14:12:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/network/http-header/</loc>
+    <lastmod>2019-06-25T14:03:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/linux/font/</loc>
+    <lastmod>2019-06-25T14:00:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/editor/editor-color/</loc>
+    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/init/</loc>
+    <lastmod>2019-06-13T18:53:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/other/registration/</loc>
+    <lastmod>2019-06-13T09:26:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/markup/orgmode/</loc>
+    <lastmod>2019-06-13T09:21:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/markup/markdown/</loc>
+    <lastmod>2019-06-13T09:20:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/markup/language/</loc>
+    <lastmod>2019-06-13T09:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/android/environment/</loc>
+    <lastmod>2019-06-13T09:16:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/php/environment/</loc>
+    <lastmod>2019-06-13T09:15:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/java/environment/</loc>
+    <lastmod>2019-06-13T09:15:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/other/website/</loc>
+    <lastmod>2019-06-13T09:12:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/other/software/</loc>
+    <lastmod>2019-06-13T09:11:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/nodejs/connect/</loc>
+    <lastmod>2019-06-13T09:04:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/vim/command/</loc>
+    <lastmod>2019-06-13T08:58:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/vim/vim-setting/</loc>
+    <lastmod>2019-06-12T14:37:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/latex/latex-chinese/</loc>
+    <lastmod>2019-06-12T14:36:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/git/git-command/</loc>
+    <lastmod>2019-06-12T14:26:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/package/</loc>
+    <lastmod>2019-06-12T10:29:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/emacs-setting/</loc>
+    <lastmod>2019-06-12T10:22:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/editor/editor-font/</loc>
+    <lastmod>2019-06-12T09:58:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/emacs/emacs-encoding/</loc>
+    <lastmod>2019-06-08T18:50:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/code/postgresql/postgresql-basic/</loc>
+    <lastmod>2019-04-16T09:17:08+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://weizui.org/code/emacs/emacs-operation/</loc>
     <lastmod>2019-02-21T17:05:22+08:00</lastmod>
   </url>
@@ -58,7 +198,38 @@
   </url>
   
   <url>
+    <loc>http://weizui.org/categories/android/</loc>
+    <lastmod>2019-06-13T09:16:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/angularjs/</loc>
+    <lastmod>2019-07-02T13:52:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/angularjs/</loc>
+    <lastmod>2019-07-02T13:52:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://weizui.org/categories/</loc>
+    <lastmod>2019-06-13T09:16:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/code/</loc>
+    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/command/</loc>
+    <lastmod>2019-06-12T10:22:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,14 +240,140 @@
   </url>
   
   <url>
+    <loc>http://weizui.org/tags/docker/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/editor/</loc>
+    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/editor/</loc>
+    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://weizui.org/categories/emacs/</loc>
-    <lastmod>2019-02-21T17:05:22+08:00</lastmod>
+    <lastmod>2019-06-12T10:29:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/emacs/</loc>
+    <lastmod>2019-06-12T10:22:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/git/</loc>
+    <lastmod>2019-06-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/git/</loc>
+    <lastmod>2019-06-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/java/</loc>
+    <lastmod>2019-06-13T09:15:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/java/</loc>
+    <lastmod>2019-06-13T09:15:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/latex/</loc>
+    <lastmod>2019-06-12T14:36:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/latex/</loc>
+    <lastmod>2019-06-12T14:36:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://weizui.org/categories/markdown/</loc>
+    <lastmod>2019-06-13T09:20:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/markdown/</loc>
     <lastmod>2018-02-13T12:00:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/operation/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/orgmode/</loc>
+    <lastmod>2019-06-13T09:21:56+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/other/</loc>
+    <lastmod>2019-06-13T09:12:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/php/</loc>
+    <lastmod>2019-06-13T09:15:41+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/postgresql/</loc>
+    <lastmod>2019-04-16T09:17:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/postgresql/</loc>
+    <lastmod>2019-04-16T09:17:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/</loc>
+    <lastmod>2019-07-02T13:52:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/categories/vim/</loc>
+    <lastmod>2019-06-12T14:37:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/vim/</loc>
+    <lastmod>2019-06-12T14:37:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/website/</loc>
+    <lastmod>2019-06-13T09:12:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   

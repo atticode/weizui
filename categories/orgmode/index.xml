@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orgmode on 微醉</title>
+    <link>http://weizui.org/categories/orgmode/</link>
+    <description>Recent content in Orgmode on 微醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Jun 2019 09:21:56 +0800</lastBuildDate>
+    
+	<atom:link href="http://weizui.org/categories/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orgmode Syntax</title>
+      <link>http://weizui.org/code/markup/orgmode/</link>
+      <pubDate>Thu, 13 Jun 2019 09:21:56 +0800</pubDate>
+      
+      <guid>http://weizui.org/code/markup/orgmode/</guid>
+      <description>标题 标题的标记为: 一至多个 &amp;lsquo;*&amp;lsquo; * 一级标题 ** 二级标题 *** 三级标题 **** 四级标题 ***** 五级标题 ****** 六级标题 段落 起始直接书写内容即为段落, 段落之间以空行分隔 列表 列表包括: 有序列表,</description>
+    </item>
+    
+  </channel>
+</rss>
