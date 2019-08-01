@@ -158,6 +158,11 @@
   </url>
   
   <url>
+    <loc>http://weizui.org/note/zui/zui/</loc>
+    <lastmod>2010-05-26T22:18:38+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://weizui.org/code/posts/demo/</loc>
     <lastmod>2018-02-09T17:27:52+08:00</lastmod>
   </url>
@@ -204,13 +209,13 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/angularjs/</loc>
+    <loc>http://weizui.org/categories/angularjs/</loc>
     <lastmod>2019-07-02T13:52:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://weizui.org/categories/angularjs/</loc>
+    <loc>http://weizui.org/tags/angularjs/</loc>
     <lastmod>2019-07-02T13:52:53+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -234,20 +239,14 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/docker/</loc>
-    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://weizui.org/categories/docker/</loc>
     <lastmod>2018-02-08T17:27:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/editor/</loc>
-    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
+    <loc>http://weizui.org/tags/docker/</loc>
+    <lastmod>2018-02-08T17:27:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -258,8 +257,8 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/emacs/</loc>
-    <lastmod>2019-06-12T10:22:05+08:00</lastmod>
+    <loc>http://weizui.org/tags/editor/</loc>
+    <lastmod>2019-06-13T19:00:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,8 +269,8 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/git/</loc>
-    <lastmod>2019-06-12T14:26:00+08:00</lastmod>
+    <loc>http://weizui.org/tags/emacs/</loc>
+    <lastmod>2019-06-12T10:22:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -282,8 +281,8 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/java/</loc>
-    <lastmod>2019-06-13T09:15:33+08:00</lastmod>
+    <loc>http://weizui.org/tags/git/</loc>
+    <lastmod>2019-06-12T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -294,8 +293,8 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/latex/</loc>
-    <lastmod>2019-06-12T14:36:07+08:00</lastmod>
+    <loc>http://weizui.org/tags/java/</loc>
+    <lastmod>2019-06-13T09:15:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -306,14 +305,20 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/markdown/</loc>
-    <lastmod>2018-02-13T12:00:08+08:00</lastmod>
+    <loc>http://weizui.org/tags/latex/</loc>
+    <lastmod>2019-06-12T14:36:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://weizui.org/categories/markdown/</loc>
     <lastmod>2019-06-13T09:20:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizui.org/tags/markdown/</loc>
+    <lastmod>2018-02-13T12:00:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -354,13 +359,13 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/postgresql/</loc>
+    <loc>http://weizui.org/categories/postgresql/</loc>
     <lastmod>2019-04-16T09:17:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://weizui.org/categories/postgresql/</loc>
+    <loc>http://weizui.org/tags/postgresql/</loc>
     <lastmod>2019-04-16T09:17:08+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -372,13 +377,13 @@
   </url>
   
   <url>
-    <loc>http://weizui.org/tags/vim/</loc>
+    <loc>http://weizui.org/categories/vim/</loc>
     <lastmod>2019-06-12T14:37:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://weizui.org/categories/vim/</loc>
+    <loc>http://weizui.org/tags/vim/</loc>
     <lastmod>2019-06-12T14:37:03+08:00</lastmod>
     <priority>0</priority>
   </url>
