@@ -43,7 +43,7 @@
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
       
       <guid>http://weizui.org/code/docker/docker-concept/</guid>
-      <description>docker概念 docker服务端 docker客户端 docker镜像 docker容器</description>
+      <description>docker服务端 docker客户端 docker镜像 docker容器</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
       
       <guid>http://weizui.org/code/docker/docker-command/</guid>
-      <description>docker镜像相关命令 镜像仓库相关命令 docker login 登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub Usage: docker login [OPTIONS] [SERVER] e.g: docker login -u username -p password OPTIONS:</description>
+      <description>镜像仓库 docker login 登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub $ docker login [OPTIONS] [SERVER] $ docker login -u username -p password 1. OPTIONS: -p, --password string: 密码 -u, --username string: 用户名 --help: 打印用</description>
     </item>
     
   </channel>

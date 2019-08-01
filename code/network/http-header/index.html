@@ -183,6 +183,16 @@
     </li>
     
     <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/network">network</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/nodejs">nodejs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
       <a class="categories--name" href="/categories/orgmode">orgmode</a>
       <span class="categories--number"> (1)</span>
     </li>
@@ -218,7 +228,7 @@
       <aside class="single--meta">
         <section>
           <span class="meta--date"> 2019-06-25 14:03 Tuesday </span>
-          <span class="meta--wordcount">字数: 1103</span>
+          <span class="meta--wordcount">字数: 566</span>
         </section>
         <div class="single--tags">
           
@@ -227,136 +237,674 @@
     </div>
     <div>
       <article class="single--content">
-        <p>#+TITLE: HTTP Header 参数列表</p>
+        
 
-<p>** Request Header fields</p>
+<h2 id="request">Request</h2>
 
-<p>| 参数名                         | 说明                              | 示例                                                                                              |
-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;|
-| Accept                         | 接收的内容类型                    | Accept: text/plain                                                                                |
-| Accept-Charset                 | 接收的字符编码                    | Accept-Charset: utf-8                                                                             |
-| Accept-Datetime                | 接受的版本时间                    | Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT                                                    |
-| Accept-Encoding                | 接受的编码格式                    | Accept-Encoding: gzip, deflate                                                                    |
-| Accept-Language                | 接受的语言                        | Accept-Language: zh-CN                                                                            |
-| Authorization                  | HTTP 身份验证的凭证               | Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==                                                 |
-| Access-Control-Request-Method  |                                   | Access-Control-Request-Method: GET                                                                |
-| Access-Control-Request-Headers |                                   | Access-Control-Request-Method: GET                                                                |
-| Cache-Control                  |                                   | Cache-Control: no-cache  或  Connection: Upgrade                                                  |
-| Connection                     |                                   | Connection: keep-alive                                                                            |
-| Cookie                         |                                   | Cookie: $Version=1; Skin=new;                                                                     |
-| Content-Length                 | 请求体的字节数                    | Content-Length: 321                                                                               |
-| Content-MD5                    | 请求体的base64编码的MD5值         | Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==                                                             |
-| Content-Type                   | 请求体的内容类型(POST或PUT请求时) | Content-Type: application/x-www-form-urlencoded                                                   |
-| Date                           |                                   | Date: Tue, 15 Nov 1994 08:12:31 GMT                                                               |
-| Expect                         |                                   | Expect: 100-continue                                                                              |
-| Forwarded                      |                                   | Forwarded: for=192.0.2.60;proto=http;by=203.0.113.43 Forwarded: for=192.0.2.43, for=198.51.100.17 |
-| From                           |                                   | From: user@example.com                                                                            |
-| Host                           |                                   | Host: en.wikipedia.org                                                                            |
-| If-Match                       |                                   | If-Match: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;                                                      |
-| If-Modified-Since              |                                   | If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT                                                  |
-| If-None-Match                  |                                   | If-None-Match: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;                                                 |
-| If-Range                       |                                   | If-Range: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;                                                      |
-| If-Unmodified-Since            |                                   | If-Unmodified-Since: Sat, 29 Oct 1994 19:43:31 GMT                                                |
-| Max-Forwards                   |                                   | Max-Forwards: 10                                                                                  |
-| Origin                         |                                   | Origin: <a href="http://www.example-social-network.com">http://www.example-social-network.com</a>                                                     |
-| Pragma                         |                                   | Pragma: no-cache                                                                                  |
-| Proxy-Authorization            |                                   | Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==                                           |
-| Range                          |                                   | Range: bytes=500-999                                                                              |
-| Referer                        |                                   | Referer: <a href="http://en.wikipedia.org/wiki/Main_Page">http://en.wikipedia.org/wiki/Main_Page</a>                                                   |
-| TE                             |                                   | TE: trailers, deflate                                                                             |
-| User-Agent                     |                                   | User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0                  |
-| Upgrade                        |                                   | Upgrade: HTTPS/1.3, IRC/6.9, RTA/x11, websocket                                                   |
-| Via                            |                                   | Via: 1.0 fred, 1.1 example.com (Apache/1.1)                                                       |
-| Warning                        |                                   | Warning: 199 Miscellaneous warning                                                                |
-|                                |                                   |                                                                                                   |
-| &mdash;其他                        |                                   |                                                                                                   |
-| X-Requested-With               |                                   | X-Requested-With: XMLHttpRequest                                                                  |
-| DNT                            |                                   | DNT: 1 (Do Not Track Enabled)                                                                     |
-| X-Forwarded-For                |                                   | X-Forwarded-For: client1, proxy1, proxy2                                                          |
-| X-Forwarded-Host               |                                   | X-Forwarded-Host: en.wikipedia.org                                                                |
-| X-Forwarded-Proto              |                                   | X-Forwarded-Proto: https                                                                          |
-| Front-End-Https                |                                   | Front-End-Https: on                                                                               |
-| X-Http-Method-Override         |                                   | X-HTTP-Method-Override: DELETE                                                                    |
-| X-ATT-DeviceId                 |                                   | X-Att-Deviceid: GT-P7320/P7320XXLPG                                                               |
-| X-Wap-Profile                  |                                   | x-wap-profile: <a href="http://wap.samsungmobile.com/uaprof/SGH-I777.xml">http://wap.samsungmobile.com/uaprof/SGH-I777.xml</a>                                   |
-| Proxy-Connection               |                                   | Proxy-Connection: keep-alive                                                                      |
-| X-UIDH                         |                                   | X-UIDH: &hellip;                                                                                       |
-| X-Csrf-Token                   |                                   | X-Csrf-Token: i8XNjC4b8KVok4uw5RftR38Wgp2BFwql                                                    |
-| X-Request-ID, X-Correlation-ID |                                   | X-Request-ID: f058ebd6-02f7-4d3f-942e-904344e8cde5                                                |</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
 
-<p>** Response fields</p>
+<tbody>
+<tr>
+<td>Accept</td>
+<td>接收的内容类型</td>
+<td>Accept: text/plain</td>
+</tr>
 
-<p>| 参数名                           | 说明             | 示例                                                                                                                            |
-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;|
-| Access-Control-Allow-Origin      |                  | Access-Control-Allow-Origin: *                                                                                                  |
-| Access-Control-Allow-Credentials |                  |                                                                                                                                 |
-| Access-Control-Expose-Headers    |                  |                                                                                                                                 |
-| Access-Control-Max-Age           |                  |                                                                                                                                 |
-| Access-Control-Allow-Methods     |                  |                                                                                                                                 |
-| Access-Control-Allow-Headers     |                  |                                                                                                                                 |
-| Accept-Patch                     |                  | Accept-Patch: text/example;charset=utf-8                                                                                        |
-| Accept-Ranges                    |                  | Accept-Ranges: bytes                                                                                                            |
-| Age                              |                  | Age: 12                                                                                                                         |
-| Allow                            |                  | Allow: GET, HEAD                                                                                                                |
-| Alt-Svc                          |                  | Alt-Svc: http/1.1=&ldquo;http2.example.com:8001&rdquo;; ma=7200                                                                             |
-| Cache-Control                    |                  | Cache-Control: max-age=3600                                                                                                     |
-| Connection                       |                  | Connection: close                                                                                                               |
-| Content-Disposition              |                  | Content-Disposition: attachment; filename=&ldquo;fname.ext&rdquo;                                                                           |
-| Content-Encoding                 |                  | Content-Encoding: gzip                                                                                                          |
-| Content-Language                 |                  | Content-Language: da                                                                                                            |
-| Content-Length                   |                  | Content-Length: 348                                                                                                             |
-| Content-Location                 |                  | Content-Location: /index.htm                                                                                                    |
-| Content-MD5                      |                  | Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==                                                                                           |
-| Content-Range                    |                  | Content-Range: bytes 21010-<sup>47021</sup>&frasl;<sub>47022</sub>                                                                                          |
-| Content-Type                     | 内容的 MIME 类型 | Content-Type: text/html; charset=utf-8                                                                                          |
-| Date                             |                  | Date: Tue, 15 Nov 1994 08:12:31 GMT                                                                                             |
-| ETag                             |                  | ETag: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;                                                                                        |
-| Expires                          |                  | Expires: Thu, 01 Dec 1994 16:00:00 GMT                                                                                          |
-| Last-Modified                    |                  | Last-Modified: Tue, 15 Nov 1994 12:45:26 GMT                                                                                    |
-| Link                             |                  | Link: </feed>; rel=&ldquo;alternate&rdquo;                                                                                                  |
-| Location                         |                  | Location: <a href="http://www.w3.org/pub/WWW/People.html">http://www.w3.org/pub/WWW/People.html</a>                                                                                 |
-| P3P                              |                  | P3P: CP=&ldquo;This is not a P3P policy! See <a href="http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657">http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657</a> for more info.&rdquo; |
-| Pragma                           |                  | Pragma: no-cache                                                                                                                |
-| Proxy-Authenticate               |                  | Proxy-Authenticate: Basic                                                                                                       |
-| Public-Key-Pins                  |                  | Public-Key-Pins: max-age=2592000; pin-sha256=&ldquo;E9CZ9INDbd+2eRQozYqqbQ2yXLVKB9+xcprMF+44U1g=&rdquo;;                                    |
-| Retry-After                      |                  | Retry-After: Fri, 07 Nov 2014 23:59:59 GMT                                                                                      |
-| Server                           |                  | Server: Apache/2.4.1 (Unix)                                                                                                     |
-| Set-Cookie                       |                  | Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=1                                                                             |
-| Strict-Transport-Security        |                  | Strict-Transport-Security: max-age=16070400; includeSubDomains                                                                  |
-| Trailer                          |                  | Trailer: Max-Forwards                                                                                                           |
-| Transfer-Encoding                |                  | Transfer-Encoding: chunked                                                                                                      |
-| Tk                               |                  | Tk: ?                                                                                                                           |
-| Upgrade                          |                  | Upgrade: HTTPS/1.3, IRC/6.9, RTA/x11, websocket                                                                                 |
-| Vary                             |                  | Vary: *                                                                                                                         |
-| Via                              |                  | Via: 1.0 fred, 1.1 example.com (Apache/1.1)                                                                                     |
-| Warning                          |                  | Warning: 199 Miscellaneous warning                                                                                              |
-| WWW-Authenticate                 |                  | WWW-Authenticate: Basic                                                                                                         |
-| X-Frame-Options                  |                  | X-Frame-Options: deny                                                                                                           |
-|                                  |                  |                                                                                                                                 |
-| &ndash;其他                           |                  |                                                                                                                                 |
-| Content-Security-Policy          |                  | X-WebKit-CSP: default-src &lsquo;self&rsquo;                                                                                                |
-| Refresh                          |                  | Refresh: 5; url=<a href="http://www.w3.org/pub/WWW/People.html">http://www.w3.org/pub/WWW/People.html</a>                                                                           |
-| Status                           |                  | Status: 200 OK                                                                                                                  |
-| Timing-Allow-Origin              |                  | Timing-Allow-Origin: *                                                                                                          |
-| Upgrade-Insecure-Requests        |                  | Upgrade-Insecure-Requests: 1                                                                                                    |
-| X-Content-Duration               |                  | X-Content-Duration: 42.666                                                                                                      |
-| X-Content-Type-Options           |                  | X-Content-Type-Options: nosniff                                                                                                 |
-| X-Powered-By                     |                  | X-Powered-By: PHP/5.4.0                                                                                                         |
-| X-Request-ID, X-Correlation-ID   |                  | X-Request-ID: f058ebd6-02f7-4d3f-942e-904344e8cde5                                                                              |
-| X-UA-Compatible                  |                  | X-UA-Compatible: Chrome=1                                                                                                       |
-| X-XSS-Protection                 |                  | X-XSS-Protection: 1; mode=block                                                                                                                                |</p>
+<tr>
+<td>Accept-Charset</td>
+<td>接收的字符编码</td>
+<td>Accept-Charset: utf-8</td>
+</tr>
+
+<tr>
+<td>Accept-Datetime</td>
+<td>接受的版本时间</td>
+<td>Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT</td>
+</tr>
+
+<tr>
+<td>Accept-Encoding</td>
+<td>接受的编码格式</td>
+<td>Accept-Encoding: gzip, deflate</td>
+</tr>
+
+<tr>
+<td>Accept-Language</td>
+<td>接受的语言</td>
+<td>Accept-Language: zh-CN</td>
+</tr>
+
+<tr>
+<td>Authorization</td>
+<td>HTTP 身份验证的凭证</td>
+<td>Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+</tr>
+
+<tr>
+<td>Access-Control-Request-Method</td>
+<td></td>
+<td>Access-Control-Request-Method: GET</td>
+</tr>
+
+<tr>
+<td>Access-Control-Request-Headers</td>
+<td></td>
+<td>Access-Control-Request-Method: GET</td>
+</tr>
+
+<tr>
+<td>Cache-Control</td>
+<td></td>
+<td>Cache-Control: no-cache  或  Connection: Upgrade</td>
+</tr>
+
+<tr>
+<td>Connection</td>
+<td></td>
+<td>Connection: keep-alive</td>
+</tr>
+
+<tr>
+<td>Cookie</td>
+<td></td>
+<td>Cookie: $Version=1; Skin=new;</td>
+</tr>
+
+<tr>
+<td>Content-Length</td>
+<td>请求体的字节数</td>
+<td>Content-Length: 321</td>
+</tr>
+
+<tr>
+<td>Content-MD5</td>
+<td>请求体的base64编码的MD5值</td>
+<td>Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==</td>
+</tr>
+
+<tr>
+<td>Content-Type</td>
+<td>请求体的内容类型(POST或PUT请求时)</td>
+<td>Content-Type: application/x-www-form-urlencoded</td>
+</tr>
+
+<tr>
+<td>Date</td>
+<td></td>
+<td>Date: Tue, 15 Nov 1994 08:12:31 GMT</td>
+</tr>
+
+<tr>
+<td>Expect</td>
+<td></td>
+<td>Expect: 100-continue</td>
+</tr>
+
+<tr>
+<td>Forwarded</td>
+<td></td>
+<td>Forwarded: for=192.0.2.60;proto=http;by=203.0.113.43 Forwarded: for=192.0.2.43, for=198.51.100.17</td>
+</tr>
+
+<tr>
+<td>From</td>
+<td></td>
+<td>From: user@example.com</td>
+</tr>
+
+<tr>
+<td>Host</td>
+<td></td>
+<td>Host: en.wikipedia.org</td>
+</tr>
+
+<tr>
+<td>If-Match</td>
+<td></td>
+<td>If-Match: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;</td>
+</tr>
+
+<tr>
+<td>If-Modified-Since</td>
+<td></td>
+<td>If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT</td>
+</tr>
+
+<tr>
+<td>If-None-Match</td>
+<td></td>
+<td>If-None-Match: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;</td>
+</tr>
+
+<tr>
+<td>If-Range</td>
+<td></td>
+<td>If-Range: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;</td>
+</tr>
+
+<tr>
+<td>If-Unmodified-Since</td>
+<td></td>
+<td>If-Unmodified-Since: Sat, 29 Oct 1994 19:43:31 GMT</td>
+</tr>
+
+<tr>
+<td>Max-Forwards</td>
+<td></td>
+<td>Max-Forwards: 10</td>
+</tr>
+
+<tr>
+<td>Origin</td>
+<td></td>
+<td>Origin: <a href="http://www.example-social-network.com">http://www.example-social-network.com</a></td>
+</tr>
+
+<tr>
+<td>Pragma</td>
+<td></td>
+<td>Pragma: no-cache</td>
+</tr>
+
+<tr>
+<td>Proxy-Authorization</td>
+<td></td>
+<td>Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+</tr>
+
+<tr>
+<td>Range</td>
+<td></td>
+<td>Range: bytes=500-999</td>
+</tr>
+
+<tr>
+<td>Referer</td>
+<td></td>
+<td>Referer: <a href="http://en.wikipedia.org/wiki/Main_Page">http://en.wikipedia.org/wiki/Main_Page</a></td>
+</tr>
+
+<tr>
+<td>TE</td>
+<td></td>
+<td>TE: trailers, deflate</td>
+</tr>
+
+<tr>
+<td>User-Agent</td>
+<td></td>
+<td>User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0</td>
+</tr>
+
+<tr>
+<td>Upgrade</td>
+<td></td>
+<td>Upgrade: HTTPS/1.3, IRC/6.9, RTA/x11, websocket</td>
+</tr>
+
+<tr>
+<td>Via</td>
+<td></td>
+<td>Via: 1.0 fred, 1.1 example.com (Apache/1.1)</td>
+</tr>
+
+<tr>
+<td>Warning</td>
+<td></td>
+<td>Warning: 199 Miscellaneous warning</td>
+</tr>
+
+<tr>
+<td>&mdash;其他</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>X-Requested-With</td>
+<td></td>
+<td>X-Requested-With: XMLHttpRequest</td>
+</tr>
+
+<tr>
+<td>DNT</td>
+<td></td>
+<td>DNT: 1 (Do Not Track Enabled)</td>
+</tr>
+
+<tr>
+<td>X-Forwarded-For</td>
+<td></td>
+<td>X-Forwarded-For: client1, proxy1, proxy2</td>
+</tr>
+
+<tr>
+<td>X-Forwarded-Host</td>
+<td></td>
+<td>X-Forwarded-Host: en.wikipedia.org</td>
+</tr>
+
+<tr>
+<td>X-Forwarded-Proto</td>
+<td></td>
+<td>X-Forwarded-Proto: https</td>
+</tr>
+
+<tr>
+<td>Front-End-Https</td>
+<td></td>
+<td>Front-End-Https: on</td>
+</tr>
+
+<tr>
+<td>X-Http-Method-Override</td>
+<td></td>
+<td>X-HTTP-Method-Override: DELETE</td>
+</tr>
+
+<tr>
+<td>X-ATT-DeviceId</td>
+<td></td>
+<td>X-Att-Deviceid: GT-P7320/P7320XXLPG</td>
+</tr>
+
+<tr>
+<td>X-Wap-Profile</td>
+<td></td>
+<td>x-wap-profile: <a href="http://wap.samsungmobile.com/uaprof/SGH-I777.xml">http://wap.samsungmobile.com/uaprof/SGH-I777.xml</a></td>
+</tr>
+
+<tr>
+<td>Proxy-Connection</td>
+<td></td>
+<td>Proxy-Connection: keep-alive</td>
+</tr>
+
+<tr>
+<td>X-UIDH</td>
+<td></td>
+<td>X-UIDH: &hellip;</td>
+</tr>
+
+<tr>
+<td>X-Csrf-Token</td>
+<td></td>
+<td>X-Csrf-Token: i8XNjC4b8KVok4uw5RftR38Wgp2BFwql</td>
+</tr>
+
+<tr>
+<td>X-Request-ID, X-Correlation-ID</td>
+<td></td>
+<td>X-Request-ID: f058ebd6-02f7-4d3f-942e-904344e8cde5</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="response">Response</h2>
+
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Access-Control-Allow-Origin</td>
+<td></td>
+<td>Access-Control-Allow-Origin: *</td>
+</tr>
+
+<tr>
+<td>Access-Control-Allow-Credentials</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Access-Control-Expose-Headers</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Access-Control-Max-Age</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Access-Control-Allow-Methods</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Access-Control-Allow-Headers</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Accept-Patch</td>
+<td></td>
+<td>Accept-Patch: text/example;charset=utf-8</td>
+</tr>
+
+<tr>
+<td>Accept-Ranges</td>
+<td></td>
+<td>Accept-Ranges: bytes</td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td></td>
+<td>Age: 12</td>
+</tr>
+
+<tr>
+<td>Allow</td>
+<td></td>
+<td>Allow: GET, HEAD</td>
+</tr>
+
+<tr>
+<td>Alt-Svc</td>
+<td></td>
+<td>Alt-Svc: http/1.1=&ldquo;http2.example.com:8001&rdquo;; ma=7200</td>
+</tr>
+
+<tr>
+<td>Cache-Control</td>
+<td></td>
+<td>Cache-Control: max-age=3600</td>
+</tr>
+
+<tr>
+<td>Connection</td>
+<td></td>
+<td>Connection: close</td>
+</tr>
+
+<tr>
+<td>Content-Disposition</td>
+<td></td>
+<td>Content-Disposition: attachment; filename=&ldquo;fname.ext&rdquo;</td>
+</tr>
+
+<tr>
+<td>Content-Encoding</td>
+<td></td>
+<td>Content-Encoding: gzip</td>
+</tr>
+
+<tr>
+<td>Content-Language</td>
+<td></td>
+<td>Content-Language: da</td>
+</tr>
+
+<tr>
+<td>Content-Length</td>
+<td></td>
+<td>Content-Length: 348</td>
+</tr>
+
+<tr>
+<td>Content-Location</td>
+<td></td>
+<td>Content-Location: /index.htm</td>
+</tr>
+
+<tr>
+<td>Content-MD5</td>
+<td></td>
+<td>Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==</td>
+</tr>
+
+<tr>
+<td>Content-Range</td>
+<td></td>
+<td>Content-Range: bytes 21010-<sup>47021</sup>&frasl;<sub>47022</sub></td>
+</tr>
+
+<tr>
+<td>Content-Type</td>
+<td>内容的 MIME 类型</td>
+<td>Content-Type: text/html; charset=utf-8</td>
+</tr>
+
+<tr>
+<td>Date</td>
+<td></td>
+<td>Date: Tue, 15 Nov 1994 08:12:31 GMT</td>
+</tr>
+
+<tr>
+<td>ETag</td>
+<td></td>
+<td>ETag: &ldquo;737060cd8c284d8af7ad3082f209582d&rdquo;</td>
+</tr>
+
+<tr>
+<td>Expires</td>
+<td></td>
+<td>Expires: Thu, 01 Dec 1994 16:00:00 GMT</td>
+</tr>
+
+<tr>
+<td>Last-Modified</td>
+<td></td>
+<td>Last-Modified: Tue, 15 Nov 1994 12:45:26 GMT</td>
+</tr>
+
+<tr>
+<td>Link</td>
+<td></td>
+<td>Link: </feed>; rel=&ldquo;alternate&rdquo;</td>
+</tr>
+
+<tr>
+<td>Location</td>
+<td></td>
+<td>Location: <a href="http://www.w3.org/pub/WWW/People.html">http://www.w3.org/pub/WWW/People.html</a></td>
+</tr>
+
+<tr>
+<td>P3P</td>
+<td></td>
+<td>P3P: CP=&ldquo;This is not a P3P policy! See <a href="http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657">http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657</a> for more info.&rdquo;</td>
+</tr>
+
+<tr>
+<td>Pragma</td>
+<td></td>
+<td>Pragma: no-cache</td>
+</tr>
+
+<tr>
+<td>Proxy-Authenticate</td>
+<td></td>
+<td>Proxy-Authenticate: Basic</td>
+</tr>
+
+<tr>
+<td>Public-Key-Pins</td>
+<td></td>
+<td>Public-Key-Pins: max-age=2592000; pin-sha256=&ldquo;E9CZ9INDbd+2eRQozYqqbQ2yXLVKB9+xcprMF+44U1g=&rdquo;;</td>
+</tr>
+
+<tr>
+<td>Retry-After</td>
+<td></td>
+<td>Retry-After: Fri, 07 Nov 2014 23:59:59 GMT</td>
+</tr>
+
+<tr>
+<td>Server</td>
+<td></td>
+<td>Server: Apache/2.4.1 (Unix)</td>
+</tr>
+
+<tr>
+<td>Set-Cookie</td>
+<td></td>
+<td>Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=1</td>
+</tr>
+
+<tr>
+<td>Strict-Transport-Security</td>
+<td></td>
+<td>Strict-Transport-Security: max-age=16070400; includeSubDomains</td>
+</tr>
+
+<tr>
+<td>Trailer</td>
+<td></td>
+<td>Trailer: Max-Forwards</td>
+</tr>
+
+<tr>
+<td>Transfer-Encoding</td>
+<td></td>
+<td>Transfer-Encoding: chunked</td>
+</tr>
+
+<tr>
+<td>Tk</td>
+<td></td>
+<td>Tk: ?</td>
+</tr>
+
+<tr>
+<td>Upgrade</td>
+<td></td>
+<td>Upgrade: HTTPS/1.3, IRC/6.9, RTA/x11, websocket</td>
+</tr>
+
+<tr>
+<td>Vary</td>
+<td></td>
+<td>Vary: *</td>
+</tr>
+
+<tr>
+<td>Via</td>
+<td></td>
+<td>Via: 1.0 fred, 1.1 example.com (Apache/1.1)</td>
+</tr>
+
+<tr>
+<td>Warning</td>
+<td></td>
+<td>Warning: 199 Miscellaneous warning</td>
+</tr>
+
+<tr>
+<td>WWW-Authenticate</td>
+<td></td>
+<td>WWW-Authenticate: Basic</td>
+</tr>
+
+<tr>
+<td>X-Frame-Options</td>
+<td></td>
+<td>X-Frame-Options: deny</td>
+</tr>
+
+<tr>
+<td>&ndash;其他</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Content-Security-Policy</td>
+<td></td>
+<td>X-WebKit-CSP: default-src &lsquo;self&rsquo;</td>
+</tr>
+
+<tr>
+<td>Refresh</td>
+<td></td>
+<td>Refresh: 5; url=<a href="http://www.w3.org/pub/WWW/People.html">http://www.w3.org/pub/WWW/People.html</a></td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td></td>
+<td>Status: 200 OK</td>
+</tr>
+
+<tr>
+<td>Timing-Allow-Origin</td>
+<td></td>
+<td>Timing-Allow-Origin: *</td>
+</tr>
+
+<tr>
+<td>Upgrade-Insecure-Requests</td>
+<td></td>
+<td>Upgrade-Insecure-Requests: 1</td>
+</tr>
+
+<tr>
+<td>X-Content-Duration</td>
+<td></td>
+<td>X-Content-Duration: 42.666</td>
+</tr>
+
+<tr>
+<td>X-Content-Type-Options</td>
+<td></td>
+<td>X-Content-Type-Options: nosniff</td>
+</tr>
+
+<tr>
+<td>X-Powered-By</td>
+<td></td>
+<td>X-Powered-By: PHP/5.4.0</td>
+</tr>
+
+<tr>
+<td>X-Request-ID, X-Correlation-ID</td>
+<td></td>
+<td>X-Request-ID: f058ebd6-02f7-4d3f-942e-904344e8cde5</td>
+</tr>
+
+<tr>
+<td>X-UA-Compatible</td>
+<td></td>
+<td>X-UA-Compatible: Chrome=1</td>
+</tr>
+
+<tr>
+<td>X-XSS-Protection</td>
+<td></td>
+<td>X-XSS-Protection: 1; mode=block</td>
+</tr>
+</tbody>
+</table>
 
 <ul>
-<li>[[<a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields][WikiPedia">https://en.wikipedia.org/wiki/List_of_HTTP_header_fields][WikiPedia</a> List of HTTP header fields]]</li>
-<li>[[<a href="https://www.w3.org/Protocols/rfc2616/rfc2616.html][W3C">https://www.w3.org/Protocols/rfc2616/rfc2616.html][W3C</a> Hypertext Transfer Protocol &ndash; HTTP/1.1]]</li>
-<li>[[<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html][W3C">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html][W3C</a> HTTP Header Field Definitions]]</li>
-<li>[[<a href="https://en.wikipedia.org/wiki/Media_type][Wiki">https://en.wikipedia.org/wiki/Media_type][Wiki</a> Media-Type]]</li>
-
-<li><p>[[<a href="http://tool.oschina.net/commons][Http">http://tool.oschina.net/commons][Http</a> Content-Type]]</p></li>
-
-<li><p>[[<a href="https://kb.cnblogs.com/page/92320/][博客园">https://kb.cnblogs.com/page/92320/][博客园</a> http fields]]</p></li>
-
-<li><p>[[<a href="https://www.cnblogs.com/widget90/p/7650890.html][博客园">https://www.cnblogs.com/widget90/p/7650890.html][博客园</a> http fields]]</p></li>
+<li>(WikiPedia List of HTTP header fields)[<a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields">https://en.wikipedia.org/wiki/List_of_HTTP_header_fields</a>]</li>
+<li>(W3C Hypertext Transfer Protocol &ndash; HTTP/1.1)[<a href="https://www.w3.org/Protocols/rfc2616/rfc2616.html">https://www.w3.org/Protocols/rfc2616/rfc2616.html</a>]</li>
+<li>(W3C HTTP Header Field Definitions)[<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</a>]</li>
+<li>(Wiki Media-Type)[<a href="https://en.wikipedia.org/wiki/Media_type">https://en.wikipedia.org/wiki/Media_type</a>]</li>
+<li>(Http Content-Type)[<a href="http://tool.oschina.net/commons">http://tool.oschina.net/commons</a>]</li>
+<li>(博客园 http fields)[<a href="https://kb.cnblogs.com/page/92320/">https://kb.cnblogs.com/page/92320/</a>]</li>
+<li>(博客园 http fields)[<a href="https://www.cnblogs.com/widget90/p/7650890.html">https://www.cnblogs.com/widget90/p/7650890.html</a>]</li>
 </ul>
 
       </article>
@@ -377,7 +925,15 @@
     </nav>
   </div>
   <div class="table-of-contents">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#request">Request</a></li>
+<li><a href="#response">Response</a></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
 

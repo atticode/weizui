@@ -183,6 +183,16 @@
     </li>
     
     <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/network">network</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/nodejs">nodejs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
       <a class="categories--name" href="/categories/orgmode">orgmode</a>
       <span class="categories--number"> (1)</span>
     </li>
@@ -218,7 +228,7 @@
       <aside class="single--meta">
         <section>
           <span class="meta--date"> 2018-02-08 17:27 Thursday </span>
-          <span class="meta--wordcount">字数: 770</span>
+          <span class="meta--wordcount">字数: 774</span>
         </section>
         <div class="single--tags">
           
@@ -246,222 +256,128 @@
       <article class="single--content">
         
 
-<h1 id="docker镜像相关命令">docker镜像相关命令</h1>
-
-<h2 id="镜像仓库相关命令">镜像仓库相关命令</h2>
+<h2 id="镜像仓库">镜像仓库</h2>
 
 <h3 id="docker-login">docker login</h3>
 
 <p>登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker login <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>SERVER<span class="o">]</span>
+$ docker login -u username -p password
 
-<blockquote>
-<p>Usage: docker login [OPTIONS] [SERVER]
-e.g: docker login -u username -p password</p>
-</blockquote>
+<span class="m">1</span>. OPTIONS:
+   -p, --password string: 密码
+   -u, --username string: 用户名
+   --help: 打印用法
 
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-p, --password string: 密码</li>
-<li>-u, --username string: 用户名</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>SERVER: 镜像仓库的地址</li>
-</ol>
-
+<span class="m">2</span>. SERVER: 镜像仓库的地址</code></pre></div>
 <h3 id="docker-logout">docker logout</h3>
 
 <p>登出一个docker镜像仓库，如果未指定镜像仓库的地址，则默认官方仓库——docker hub</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker <span class="nb">logout</span> <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>SERVER<span class="o">]</span>
+$ docker <span class="nb">logout</span>
 
-<blockquote>
-<p>Usage: docker logout [OPTIONS] [SERVER]
-e.g: docker logout</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>SERVER: 镜像仓库的地址</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   --help: 打印用法
+<span class="m">2</span>. SERVER: 镜像仓库的地址</code></pre></div>
 <h3 id="docker-search">docker search</h3>
 
 <p>从镜像仓库查找镜像</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker search <span class="o">[</span>OPTIONS<span class="o">]</span> TERM
+$ docker search httpd
 
-<blockquote>
-<p>Usage: docker search [OPTIONS] TERM
-e.g: docker search httpd</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-f, --filter value: 根据限制条件搜索 (default [])
-
-<ul>
-<li>e.g: docker search --filter=stars=10</li>
-</ul></li>
-<li>--limit int: 显示搜索结果的数量 (default 25)</li>
-<li>--no-index: 显示完整的镜像描述</li>
-<li>--no-trunc: 显示完整的镜像描述</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>TERM: 镜像名称</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -f, --filter value: 根据限制条件搜索 <span class="o">(</span>default <span class="o">[])</span>
+	  e.g.: docker search --filter<span class="o">=</span><span class="nv">stars</span><span class="o">=</span><span class="m">10</span>
+   --limit int: 显示搜索结果的数量 <span class="o">(</span>default <span class="m">25</span><span class="o">)</span>
+   --no-index: 显示完整的镜像描述
+   --no-trunc: 显示完整的镜像描述
+   --help: 打印用法
+<span class="m">2</span>. TERM: 镜像名称</code></pre></div>
 <h3 id="docker-pull">docker pull</h3>
 
 <p>从镜像仓库中拉取或更新指定镜像</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker pull <span class="o">[</span>OPTIONS<span class="o">]</span> NAME<span class="o">[</span>:TAG<span class="p">|</span>@DIGEST<span class="o">]</span>
+$ docker pull tomcat
 
-<blockquote>
-<p>Usage: docker pull [OPTIONS] NAME[:TAG|@DIGEST]
-e.g: docker pull tomcat</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-a, --all-tags: 拉取所有 tagged 镜像</li>
-<li>--disable-content-trust: 忽略镜像的校验，默认开启</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>NAME: 镜像名称</li>
-<li>TAG: 镜像的tag</li>
-<li>DIGEST: 镜像的ID</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -a, --all-tags: 拉取所有 tagged 镜像
+   --disable-content-trust: 忽略镜像的校验，默认开启
+   --help: 打印用法
+<span class="m">2</span>. NAME: 镜像名称
+<span class="m">3</span>. TAG: 镜像的tag
+<span class="m">4</span>. DIGEST: 镜像的ID</code></pre></div>
 <h3 id="docker-push">docker push</h3>
 
 <p>将本地的镜像上传到镜像仓库，要先登录到镜像仓库</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker push <span class="o">[</span>OPTIONS<span class="o">]</span> NAME<span class="o">[</span>:TAG<span class="o">]</span>
+$ docker push myhttpd:1.0
 
-<blockquote>
-<p>Usage: docker push [OPTIONS] NAME[:TAG]
-e.g: docker push myhttpd:1.0</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>--disable-content-trust: 忽略镜像校验(默认开启)</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>NAME: 镜像名称</li>
-<li>TAG: 镜像的tag</li>
-</ol>
-
-<h2 id="本地镜像管理相关命令">本地镜像管理相关命令</h2>
+<span class="m">1</span>. OPTIONS:
+   --disable-content-trust: 忽略镜像校验<span class="o">(</span>默认开启<span class="o">)</span>
+   --help: 打印用法
+<span class="m">2</span>. NAME: 镜像名称
+<span class="m">3</span>. TAG: 镜像的tag</code></pre></div>
+<h2 id="本地镜像">本地镜像</h2>
 
 <h3 id="docker-images">docker images</h3>
 
 <p>列出本地镜像</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker images <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>REPOSITORY<span class="o">[</span>:TAG<span class="o">]]</span>
+$ docker images
 
-<blockquote>
-<p>Usage: docker images [OPTIONS] [REPOSITORY[:TAG]]
-e.g: docker images</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-a, --all: 列出本地所有镜像，(包括中间映射层，默认情况下过滤掉中间映射层)</li>
-<li>--digests: 显示sha256信息</li>
-<li>-f, --filter value: 根据限制条件过滤输出(default [])</li>
-<li>--format string: 指定返回值的模板文件</li>
-<li>--no-reunc: 显示完整的镜像信息</li>
-<li>-q, --quiet: 只显示镜像ID</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>REPOSITORY: 镜像名称</li>
-<li>TAG: 镜像的tag</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -a, --all: 列出本地所有镜像，<span class="o">(</span>包括中间映射层，默认情况下过滤掉中间映射层<span class="o">)</span>
+   --digests: 显示sha256信息
+   -f, --filter value: 根据限制条件过滤输出<span class="o">(</span>default <span class="o">[])</span>
+   --format string: 指定返回值的模板文件
+   --no-reunc: 显示完整的镜像信息
+   -q, --quiet: 只显示镜像ID
+   --help: 打印用法
+<span class="m">2</span>. REPOSITORY: 镜像名称
+<span class="m">3</span>. TAG: 镜像的tag</code></pre></div>
 <h3 id="docker-tag">docker tag</h3>
 
 <p>标记本地镜像到一个仓库</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker tag <span class="o">[</span>OPTIONS<span class="o">]</span> IMAGE<span class="o">[</span>:TAG<span class="o">]</span> IMAGE<span class="o">[</span>:TAG<span class="o">]</span>
+$ docker tag httpd:latest myhttpd:mytag
 
-<blockquote>
-<p>Usage: docker tag [OPTIONS] IMAGE[:TAG] IMAGE[:TAG]
-e.g: docker tag httpd:latest myhttpd:mytag</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>IMAGE: 镜像名称</li>
-<li>IMAGE: 自定义镜像名称</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   --help: 打印用法
+<span class="m">2</span>. IMAGE: 镜像名称
+<span class="m">3</span>. IMAGE: 自定义镜像名称</code></pre></div>
 <h3 id="docker-history">docker history</h3>
 
 <p>查看镜像的历史记录</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker <span class="nb">history</span> <span class="o">[</span>OPTIONS<span class="o">]</span> IMAGE
+$ docker <span class="nb">history</span> httpd
 
-<blockquote>
-<p>Usage: docker history [OPTIONS] IMAGE
-e.g: docker history httpd</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-H, --human:以可读的格式打印镜像的大小和日期, 默认为 true</li>
-<li>--no-trunc: 显示完整的镜像信息</li>
-<li>-q, --quiet: 仅列出提交记录ID</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>IMAGE: 镜像名称</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -H, --human:以可读的格式打印镜像的大小和日期, 默认为 <span class="nb">true</span>
+   --no-trunc: 显示完整的镜像信息
+   -q, --quiet: 仅列出提交记录ID
+   --help: 打印用法
+<span class="m">2</span>. IMAGE: 镜像名称</code></pre></div>
 <h3 id="docker-rmi">docker rmi</h3>
 
 <p>删除一个或多个镜像</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">&gt; Usage: docker rmi <span class="o">[</span>OPTIONS<span class="o">]</span> IMAGE <span class="o">[</span>IMAGE...<span class="o">]</span>
+&gt; e.g: docker rmi httpd
 
-<blockquote>
-<p>Usage: docker rmi [OPTIONS] IMAGE [IMAGE&hellip;]
-e.g: docker rmi httpd</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-f, --force: 强制删除镜像</li>
-<li>--no-prune: 不移除该镜像的过程镜像，默认移除</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>IMAGE: 镜像名称</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -f, --force: 强制删除镜像
+   --no-prune: 不移除该镜像的过程镜像，默认移除
+   --help: 打印用法
+<span class="m">2</span>. IMAGE: 镜像名称</code></pre></div>
 <h3 id="docker-save">docker save</h3>
 
 <p>将一个或多个镜像保存成 tar 文件</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker save <span class="o">[</span>OPTIONS<span class="o">]</span> IMAGE <span class="o">[</span>IMAGE...<span class="o">]</span>
+$ docker save -o httpd.tar httpd
 
-<blockquote>
-<p>Usage: docker save [OPTIONS] IMAGE [IMAGE&hellip;]
-e.g: docker save -o httpd.tar httpd</p>
-</blockquote>
-
-<ol>
-<li>OPTIONS:
-
-<ul>
-<li>-o, --output string: 保存到的文件</li>
-<li>--help: 打印用法</li>
-</ul></li>
-<li>IMAGE: 镜像名称</li>
-</ol>
-
+<span class="m">1</span>. OPTIONS:
+   -o, --output string: 保存到的文件
+   --help: 打印用法
+<span class="m">2</span>. IMAGE: 镜像名称</code></pre></div>
 <h3 id="docker-load">docker load</h3>
 
 <h3 id="docker-export">docker export</h3>
@@ -487,9 +403,9 @@ e.g: docker save -o httpd.tar httpd</p>
   <div class="table-of-contents">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#docker镜像相关命令">docker镜像相关命令</a>
+<li>
 <ul>
-<li><a href="#镜像仓库相关命令">镜像仓库相关命令</a>
+<li><a href="#镜像仓库">镜像仓库</a>
 <ul>
 <li><a href="#docker-login">docker login</a></li>
 <li><a href="#docker-logout">docker logout</a></li>
@@ -497,7 +413,7 @@ e.g: docker save -o httpd.tar httpd</p>
 <li><a href="#docker-pull">docker pull</a></li>
 <li><a href="#docker-push">docker push</a></li>
 </ul></li>
-<li><a href="#本地镜像管理相关命令">本地镜像管理相关命令</a>
+<li><a href="#本地镜像">本地镜像</a>
 <ul>
 <li><a href="#docker-images">docker images</a></li>
 <li><a href="#docker-tag">docker tag</a></li>

@@ -91,6 +91,9 @@ body {
 pre,
 code {
   font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 h1 {
   font-size: 1.4rem;

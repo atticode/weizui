@@ -61,7 +61,7 @@
       <pubDate>Tue, 25 Jun 2019 14:03:51 +0800</pubDate>
       
       <guid>http://weizui.org/code/network/http-header/</guid>
-      <description>#+TITLE: HTTP Header 参数列表 ** Request Header fields | 参数名 | 说明 | 示例 | |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| | Accept | 接收的内容类型 | Accept: text/plain | | Accept-Charset | 接收的字符编码 | Accept-Charset: utf-8 | | Accept-Datetime | 接受的版本时间 | Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT | | Accept-Encoding | 接受的编码格式</description>
+      <description>Request 参数名 说明 示例 Accept 接收的内容类型 Accept: text/plain Accept-Charset 接收的字符编码 Accept-Charset: utf-8 Accept-Datetime 接受的版本时间 Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT Accept-Encoding 接受的编码格式 Accept-Encoding: gzip, deflate Accept-Language 接受的语言 Accept-Language: zh-CN Authorization HTTP 身份验证的凭证 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ== Access-Control-Request-Method Access-Control-Request-Method: GET Access-Control-Request-Headers Access-Control-Request-Method: GET</description>
     </item>
     
     <item>
@@ -313,7 +313,7 @@
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
       
       <guid>http://weizui.org/code/docker/docker-concept/</guid>
-      <description>docker概念 docker服务端 docker客户端 docker镜像 docker容器</description>
+      <description>docker服务端 docker客户端 docker镜像 docker容器</description>
     </item>
     
     <item>
@@ -322,7 +322,7 @@
       <pubDate>Thu, 08 Feb 2018 17:27:52 +0800</pubDate>
       
       <guid>http://weizui.org/code/docker/docker-command/</guid>
-      <description>docker镜像相关命令 镜像仓库相关命令 docker login 登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub Usage: docker login [OPTIONS] [SERVER] e.g: docker login -u username -p password OPTIONS:</description>
+      <description>镜像仓库 docker login 登录到一个docker镜像仓库, 如果未指定镜像仓库的地址，则默认官方仓库——docker hub $ docker login [OPTIONS] [SERVER] $ docker login -u username -p password 1. OPTIONS: -p, --password string: 密码 -u, --username string: 用户名 --help: 打印用</description>
     </item>
     
   </channel>

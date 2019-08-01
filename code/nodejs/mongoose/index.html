@@ -183,6 +183,16 @@
     </li>
     
     <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/network">network</a>
+      <span class="categories--number"> (1)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
+      <a class="categories--name" href="/categories/nodejs">nodejs</a>
+      <span class="categories--number"> (2)</span>
+    </li>
+    
+    <li class="categories--item list-unstyled">
       <a class="categories--name" href="/categories/orgmode">orgmode</a>
       <span class="categories--number"> (1)</span>
     </li>
@@ -218,7 +228,7 @@
       <aside class="single--meta">
         <section>
           <span class="meta--date"> 2019-07-02 13:51 Tuesday </span>
-          <span class="meta--wordcount">字数: 3374</span>
+          <span class="meta--wordcount">字数: 3018</span>
         </section>
         <div class="single--tags">
           
@@ -288,41 +298,35 @@
 <li><p>安装</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ npm install --save mongoose</code></pre></div></li>
 
-<li><p>使用
-``` javascript
-// API
-var mongoose = require(&ldquo;mongoose&rdquo;);
-var db = mongoose.connect(&ldquo;mongodb://localhost:27017/test&rdquo;);
-// db - 数据库操作
-// 1.挂接数据库连接事件,参数1: 也可以是error.</p></li>
+<li><p>使用</p></li>
 </ol>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// API
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;mongoose&#34;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s2">&#34;mongodb://localhost:27017/test&#34;</span><span class="p">);</span>
+<span class="c1">// db - 数据库操作
+</span><span class="c1">// 1.挂接数据库连接事件,参数1: 也可以是error.
+</span><span class="c1"></span>
+<span class="nx">db</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="err">‘</span><span class="nx">open</span><span class="err">’</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span></code></pre></div>
+<h2 id="schema-表结构">Schema - 表结构</h2>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 1.构造函数
+</span><span class="c1"></span><span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">(</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="p">{</span><span class="nx">type</span><span class="o">:</span><span class="nb">String</span><span class="p">},</span> <span class="nx">age</span><span class="o">:</span><span class="p">{</span><span class="nx">type</span><span class="o">:</span><span class="nb">Number</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span><span class="mi">10</span><span class="p">}</span>  <span class="p">}</span> <span class="p">)</span>
 
-<p>db.connection.on(‘open’, callback);</p>
+<span class="c1">// 2.添加属性
+</span><span class="c1"></span><span class="nx">Schema</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="err">‘</span><span class="nb">String</span><span class="err">’</span><span class="p">,</span> <span class="nx">email</span><span class="o">:</span> <span class="err">‘</span><span class="nb">String</span><span class="err">’</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="err">‘</span><span class="nb">Number</span><span class="err">’</span> <span class="p">}</span> <span class="p">)</span>
 
-<pre><code>
-## Schema - 表结构
-``` javascript
-// 1.构造函数
-new mongoose.Schema( { name:{type:String}, age:{type:Number, default:10}  } )
+<span class="c1">// 3.有时候Schema不仅要为后面的Model和Entity提供公共的属性，还要提供公共的方法
+</span><span class="c1"></span><span class="nx">Schema</span><span class="p">.</span><span class="nx">method</span><span class="p">(</span> <span class="err">‘</span><span class="nx">say</span><span class="err">’</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">‘</span><span class="nx">hello</span><span class="err">’</span><span class="p">);}</span> <span class="p">)</span>
 
-// 2.添加属性
-Schema.add( { name: ‘String’, email: ‘String’, age: ‘Number’ } )
+<span class="c1">//这样Model和Entity的实例就能使用这个方法了
+</span><span class="c1"></span>
+<span class="c1">// 4.添加静态方法
+</span><span class="c1"></span><span class="nx">Schema</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="err">‘</span><span class="nx">say</span><span class="err">’</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">‘</span><span class="nx">hello</span><span class="err">’</span><span class="p">);}</span> <span class="p">)</span>
 
-// 3.有时候Schema不仅要为后面的Model和Entity提供公共的属性，还要提供公共的方法
-Schema.method( ‘say’, function(){console.log(‘hello’);} )
-
-//这样Model和Entity的实例就能使用这个方法了
-
-// 4.添加静态方法
-Schema.static( ‘say’, function(){console.log(‘hello’);} )
-
-//静态方法，只限于在Model层就能使用
-
-// 5.追加方法
-Schema.methods.say = function(){console.log(‘hello’);};
-//静态方法，只限于在Model层就能使用
-</code></pre>
-
+<span class="c1">//静态方法，只限于在Model层就能使用
+</span><span class="c1"></span>
+<span class="c1">// 5.追加方法
+</span><span class="c1"></span><span class="nx">Schema</span><span class="p">.</span><span class="nx">methods</span><span class="p">.</span><span class="nx">say</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">‘</span><span class="nx">hello</span><span class="err">’</span><span class="p">);};</span>
+<span class="err">//静态方法，只限于在Model层就能使用</span></code></pre></div>
 <h2 id="model-文档操作">model-文档操作</h2>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 1.构造函数, 参数1:集合名称, 参数2:Schema实例
 </span><span class="c1"></span><span class="nx">db</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="err">“</span><span class="nx">test1</span><span class="err">”</span><span class="p">,</span> <span class="nx">TestSchema</span> <span class="p">);</span>
@@ -352,7 +356,7 @@ Schema.methods.say = function(){console.log(‘hello’);};
 </span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">conditions</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span></code></pre></div>
 <h2 id="entity-文档操作">Entity - 文档操作</h2>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 1.构造函数, 其实就是model的实例
-</span><span class="c1"></span><span class="k">new</span> <span class="nx">TestModel</span><span class="p">(</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="err">‘</span><span class="nx">xueyou</span><span class="err">’</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span><span class="mi">21</span> <span class="p">}</span> <span class="p">);</span>
+</span><span class="c1"></span><span class="k">new</span> <span class="nx">TestModel</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;xueyou&#39;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span><span class="mi">21</span><span class="p">});</span>
 
 <span class="c1">// 2.创建, 在集合中创建一个文档.
 </span><span class="c1"></span><span class="nx">Entity</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="nx">callback</span><span class="p">);</span>
@@ -361,16 +365,16 @@ Schema.methods.say = function(){console.log(‘hello’);};
 </span><span class="c1">// 更新修改器:
 </span><span class="c1">// `$inc` 增减修改器,只对数字有效.下面的实例: 找到 age=22的文档,修改文档的age值自增1
 </span><span class="c1"></span>
-<span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="err">’</span><span class="nx">$inc</span><span class="err">’</span><span class="o">:</span><span class="p">{</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">1</span><span class="p">}</span> <span class="p">}</span>  <span class="p">);</span>
+<span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="s1">&#39;age&#39;</span><span class="o">:</span><span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;$inc&#39;</span><span class="o">:</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">}});</span>
 <span class="c1">// 执行后: age=23
 </span><span class="c1"></span>
 <span class="c1">// `$set` 指定一个键的值,这个键不存在就创建它.可以是任何MondoDB支持的类型.
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="err">’</span><span class="nx">$set</span><span class="err">’</span><span class="o">:</span><span class="p">{</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="err">‘</span><span class="nx">haha</span><span class="err">’</span><span class="p">}</span> <span class="p">}</span>  <span class="p">);</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;$set&#39;</span><span class="o">:</span><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="s1">&#39;haha&#39;</span><span class="p">}});</span>
 <span class="c1">// 执行后: age=‘haha’
 </span><span class="c1"></span>
 <span class="c1">// `$unset` 同上取反,删除一个键
 </span><span class="c1"></span>
- <span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="err">’</span><span class="nx">$unset</span><span class="err">’</span><span class="o">:</span><span class="p">{</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="err">‘</span><span class="nx">haha</span><span class="err">’</span><span class="p">}</span> <span class="p">}</span>  <span class="p">);</span>
+ <span class="nx">Model</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">22</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;$unset&#39;</span><span class="o">:</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="s1">&#39;haha&#39;</span><span class="p">}});</span>
 <span class="nx">执行后</span><span class="o">:</span> <span class="nx">age键不存在</span>
 
 <span class="nx">数组修改器</span><span class="o">:</span>
@@ -418,20 +422,20 @@ Schema.methods.say = function(){console.log(‘hello’);};
  <span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;$or&#34;</span> <span class="o">:</span>  <span class="p">[</span> <span class="p">{</span><span class="err">‘</span><span class="nx">age</span><span class="err">’</span><span class="o">:</span><span class="mi">18</span><span class="p">}</span> <span class="p">,</span> <span class="p">{</span><span class="err">‘</span><span class="nx">name</span><span class="err">’</span><span class="o">:</span><span class="err">‘</span><span class="nx">xueyou</span><span class="err">’</span><span class="p">}</span> <span class="p">]</span> <span class="p">});</span>
 <span class="nx">查询</span> <span class="nx">age等于18</span> <span class="nx">或</span> <span class="nx">name等于</span><span class="err">’</span><span class="nx">xueyou</span><span class="err">’</span> <span class="nx">的文档</span></code></pre></div>
 <h2 id="类型查询">类型查询</h2>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kc">null</span> <span class="nx">能匹配自身和不存在的值</span><span class="p">,</span> <span class="nx">想要匹配键的值</span> <span class="nx">为null</span><span class="p">,</span> <span class="nx">就要通过</span>  <span class="err">“</span><span class="nx">$exists</span><span class="err">”</span> <span class="nx">条件判定键值已经存在</span>
-<span class="s2">&#34;$exists&#34;</span> <span class="p">(</span><span class="nx">表示是否存在的意思</span><span class="p">)</span>
-
- <span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="err">“</span><span class="nx">age</span><span class="err">”</span> <span class="o">:</span>  <span class="p">{</span> <span class="err">“</span><span class="nx">$in</span><span class="err">”</span> <span class="o">:</span> <span class="p">[</span><span class="kc">null</span><span class="p">]</span> <span class="p">,</span> <span class="err">“</span><span class="nx">exists</span><span class="err">”</span> <span class="o">:</span> <span class="kc">true</span>  <span class="p">}</span> <span class="p">);</span>
-<span class="nx">查询</span> <span class="nx">age值为null的文档</span>
-
-<span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="p">{</span><span class="nx">$exists</span><span class="o">:</span> <span class="kc">true</span><span class="p">}},</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="nx">docs</span><span class="p">){</span>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// null 能匹配自身和不存在的值, 想要匹配键的值 为null, 就要通过  “$exists” 条件判定键值已经存在
+</span><span class="c1">// &#34;$exists&#34; (表示是否存在的意思)
+</span><span class="c1"></span>
+<span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s2">&#34;age&#34;</span> <span class="o">:</span>  <span class="p">{</span><span class="s2">&#34;$in&#34;</span><span class="o">:</span> <span class="p">[</span><span class="kc">null</span><span class="p">]</span> <span class="p">,</span> <span class="s2">&#34;$exists&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">});</span>
+<span class="c1">// 查询 age值为null的文档
+</span><span class="c1"></span>
+<span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span> <span class="p">{</span><span class="s2">&#34;$exists&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">}},</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="nx">docs</span><span class="p">){</span>
   <span class="c1">//查询所有存在name属性的文档
 </span><span class="c1"></span><span class="p">});</span>
 
 <span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">telephone</span><span class="o">:</span> <span class="p">{</span><span class="nx">$exists</span><span class="o">:</span> <span class="kc">false</span><span class="p">}},</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="nx">docs</span><span class="p">){</span>
   <span class="c1">//查询所有不存在telephone属性的文档
 </span><span class="c1"></span><span class="p">});</span></code></pre></div>
-<h2 id="正则表达式">正则表达式:</h2>
+<h2 id="正则表达式">正则表达式</h2>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// MongoDb 使用 Prel兼容的正则表达式库来匹配正则表达式
 </span><span class="c1"></span>
 <span class="c1">// 查询name为 joe 的文档, 并忽略大小写
@@ -441,30 +445,30 @@ Schema.methods.say = function(){console.log(‘hello’);};
 </span><span class="c1"></span><span class="nx">db</span><span class="p">.</span><span class="nx">inventory</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;name&#34;</span><span class="o">:</span> <span class="sr">/joe?/i</span><span class="p">})</span></code></pre></div>
 <h2 id="查询数组">查询数组</h2>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 查询 array(数组类型)键中有10的文档,  array : [1,2,3,4,5,10]  会匹配到
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="err">”</span><span class="o">:</span><span class="mi">10</span><span class="p">}</span> <span class="p">);</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array&#34;</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
 
 <span class="c1">// 查询 array(数组类型)键中下标5对应的值是10,  array : [1,2,3,4,5,10]  会匹配到
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="err">”</span><span class="o">:</span><span class="mi">10</span><span class="p">}</span> <span class="p">);</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array[5]&#34;</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
 
 <span class="c1">// `$all` 匹配数组中多个元素
 </span><span class="c1"></span>
 <span class="c1">// 查询 匹配array数组中 既有5又有10的文档
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="err">”</span><span class="o">:</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]}</span> <span class="p">);</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array&#34;</span><span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]});</span>
 
 <span class="c1">// `$size` 匹配数组长度, 查询 匹配array数组长度为3 的文档
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="err">”</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;$size&#34;</span> <span class="o">:</span> <span class="mi">3</span><span class="p">}});</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array&#34;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&#34;$size&#34;</span> <span class="o">:</span> <span class="mi">3</span><span class="p">}});</span>
 
 
 <span class="c1">// `$slice` 查询子集合返回
 </span><span class="c1"></span>
 <span class="c1">// 查询 匹配array数组的前10个元素
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="err">”</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;$skice&#34;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">}</span> <span class="p">}</span> <span class="p">);</span>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array&#34;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&#34;$skice&#34;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">}});</span>
 
 <span class="c1">// 查询 匹配array数组的第5个到第10个元素
-</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err">“</span><span class="nx">array</span><span class="err">”</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;$skice&#34;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span> <span class="p">}</span> <span class="p">}</span> <span class="p">);</span></code></pre></div>
+</span><span class="c1"></span><span class="nx">Model</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;array&#34;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&#34;$skice&#34;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]}});</span></code></pre></div>
 <h2 id="where">where</h2>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">用它可以执行任意javacript语句作为查询的一部分</span><span class="p">,</span><span class="nx">如果回调函数返回</span> <span class="kc">true</span> <span class="nx">文档就作为结果的一部分返回</span>
-
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 用它可以执行任意javacript语句作为查询的一部分,如果回调函数返回 true 文档就作为结果的一部分返回
+</span><span class="c1"></span>
 <span class="nx">find</span><span class="p">({</span>
   <span class="s2">&#34;$where&#34;</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
   	<span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">x</span> <span class="k">in</span> <span class="k">this</span> <span class="p">){</span>
@@ -478,13 +482,14 @@ Schema.methods.say = function(){console.log(‘hello’);};
   	<span class="p">}</span>
   <span class="p">}</span>
 <span class="p">})</span>
+
 <span class="c1">// 简化版本
 </span><span class="c1"></span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span><span class="s2">&#34;$where&#34;</span><span class="o">:</span> <span class="s2">&#34;this.x + this.y === 10&#34;</span><span class="p">})</span>
-<span class="nx">find</span><span class="p">(</span> <span class="p">{</span><span class="s2">&#34;$where&#34;</span><span class="o">:</span> <span class="s2">&#34;function(){ return this.x + this.y ===10; }&#34;</span><span class="p">})</span></code></pre></div>
+<span class="nx">find</span><span class="p">(</span> <span class="p">{</span><span class="s2">&#34;$where&#34;</span><span class="o">:</span> <span class="s2">&#34;function(){ return this.x + this.y ===10;}&#34;</span><span class="p">})</span></code></pre></div>
 <h2 id="游标-1">游标</h2>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>	<span class="nx">限制返回结果的数量</span><span class="p">,</span>
-<span class="nx">skip</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>	<span class="nx">跳过前3个文档</span><span class="p">,</span><span class="nx">返回其余的</span>
-<span class="nx">sort</span><span class="p">(</span> <span class="p">{</span><span class="err">“</span><span class="nx">username</span><span class="err">”</span><span class="o">:</span><span class="mi">1</span> <span class="p">,</span> <span class="err">“</span><span class="nx">age</span><span class="err">”</span><span class="o">:-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">)</span>	<span class="nx">排序</span> <span class="nx">键对应文档的键名</span><span class="p">,</span> <span class="nx">值代表排序方向</span><span class="p">,</span> <span class="mi">1</span> <span class="nx">升序</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="nx">降序</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>	<span class="c1">// 限制返回结果的数量,
+</span><span class="c1"></span><span class="nx">skip</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>	<span class="c1">// 跳过前3个文档,返回其余的
+</span><span class="c1"></span><span class="nx">sort</span><span class="p">({</span><span class="s2">&#34;username&#34;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;age&#34;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">})</span>	<span class="err">// 排序 键对应文档的键名, 值代表排序方向, 1 升序, -1降序</span></code></pre></div>
       </article>
     </div>
     <nav class="single--nav">
@@ -513,11 +518,12 @@ Schema.methods.say = function(){console.log(‘hello’);};
 <li><a href="#游标">游标</a></li>
 <li><a href="#objectid">ObjectId</a></li>
 <li><a href="#node-js-中">Node.js 中</a></li>
+<li><a href="#schema-表结构">Schema - 表结构</a></li>
 <li><a href="#model-文档操作">model-文档操作</a></li>
 <li><a href="#entity-文档操作">Entity - 文档操作</a></li>
 <li><a href="#条件查询">条件查询</a></li>
 <li><a href="#类型查询">类型查询</a></li>
-<li><a href="#正则表达式">正则表达式:</a></li>
+<li><a href="#正则表达式">正则表达式</a></li>
 <li><a href="#查询数组">查询数组</a></li>
 <li><a href="#where">where</a></li>
 <li><a href="#游标-1">游标</a></li>
